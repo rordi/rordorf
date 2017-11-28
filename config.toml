@@ -1,4 +1,4 @@
 baseURL = "http://rordorf.org/"
 languageCode = "de-ch"
 title = "Rordorfscher Familienfonds"
-theme = "gohugo-theme-ananke"
+theme = "beautifulhugo"
