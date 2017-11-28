@@ -1,0 +1,35 @@
+/* fonts first */
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,700');
+
+/* reset styles */
+@import "partials/reset.scss";
+
+/* variables */
+
+$red: #A6200D;
+$white: #fdfdfd;
+
+body {
+  font-family: Assistant, 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.67;
+  background-image: url('/images/bg.png');
+  background-repeat: repeat;
+}
+
+.header {
+  margin: 1em;
+}
+
+.navigation {
+  list-style: none;
+  display: block;
+  background: $red;
+  color: $white;
+
+  li {
+    display: inline-block;
+    padding: 0.3em 1em;
+  }
+}
+
