@@ -42,5 +42,8 @@
     "url-loader": "^0.5.7",
     "webpack": "3.6.0",
     "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "include-media": "^1.4.9"
   }
 }
