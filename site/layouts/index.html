@@ -1,7 +1,11 @@
 {{ partial "header" . }}
 
-<p>
-  Hooray 🎉 - built with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
-</p>
+<ul>
+  {{ range first 2 .Data.Pages }}
+    {{ .Render "li" }}
+  {{ end }}
+</ul>
 
 {{ partial "footer" . }}
+
+
