@@ -92,7 +92,7 @@ a:hover {
   .logo {
     display: block;
     float: left;
-    padding: 1em 1em 0 0;
+    padding: 0 1em 0.5em 0;
 
     img {
       width: 120px;
@@ -108,7 +108,7 @@ a:hover {
 
   .teaser {
     display: block;
-    padding: 2.4em 1em 0 0;
+    padding: 1.4em 1em 0 0;
 
     @include media("<=phone") {
       padding: 1.5em 1em 0 0;
