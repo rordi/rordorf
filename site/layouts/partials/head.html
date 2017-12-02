@@ -5,32 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name='language' content='DE'>
   <meta name="robots" content="index, follow" />
-  <meta name="description" content="Der Rordorfsche Familienfonds wurde 1710 durch das Legat der Schwestern Margaretha
-  und Elisabetha Rordorf in Zürich gegründet. Zweck der Stiftung ist die Überlassung des Ertrages aus dem Stiftungsvermögen,
-  um das wirtschaftliche und berufliche Fortkommen der Familienmitglieder zu erleichtern, insbesondere durch Stipendien." />
-  <meta name="keywords" content="Rordorf, Rordorf Fonds, Rordorf Stiftung, Rordorfscher Familienfonds" />
-  <meta name="theme-color" content="#A6200D">
+  <meta name="description" content="{{ .Site.Params.appDescription }}" />
+  <meta name="keywords" content="{{ .Site.Params.appKeywords }}" />
+  <meta name="theme-color" content="{{ .Site.Params.appColor }}">
   <link rel="image_src" href="images/rordorf-icon.jpg" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="apple-mobile-web-app-title" content="Rordorf Fonds">
+  <meta name="apple-mobile-web-app-title" content="{{ .Site.Params.appTitle }}">
   <meta name='apple-mobile-web-app-capable' content='yes'>
-  <meta name='application-name' content='Rordorf Fonds'>
-  <meta name='msapplication-navbutton-color' content='#A6200D'>
-  <meta name="msapplication-TileColor" content="#A6200D" />
+  <meta name='application-name' content='{{ .Site.Params.appTitle }}'>
+  <meta name='msapplication-navbutton-color' content='{{ .Site.Params.appColor }}'>
+  <meta name="msapplication-TileColor" content="{{ .Site.Params.appColor }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@ediqoHQ" />
   <meta name="twitter:image" content="images/rordorf-icon.jpg" />
-  <meta name="twitter:title" content="Rordorfscher Familienfonds | gegründet in Zürich 1710" />
-  <meta name="twitter:description" content="Der Rordorfsche Familienfonds wurde 1710 durch das Legat der Schwestern Margaretha
-  und Elisabetha Rordorf in Zürich gegründet. Zweck der Stiftung ist die Überlassung des Ertrages aus dem Stiftungsvermögen,
-  um das wirtschaftliche und berufliche Fortkommen der Familienmitglieder zu erleichtern, insbesondere durch Stipendien." />
+  <meta name="twitter:title" content="{{ .Site.Params.appTitle }}" />
+  <meta name="twitter:description" content="{{ .Site.Params.appDescription }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Rordorfscher Familienfonds" />
+  <meta property="og:site_name" content="{{ .Site.Params.appTitle }}" />
   <meta property="og:url" content="https://rordorf.org" />
-  <meta property="og:title" content="Rordorfscher Familienfonds | gegründet in Zürich 1710" />
-  <meta property="og:description" content="Der Rordorfsche Familienfonds wurde 1710 durch das Legat der Schwestern Margaretha
-  und Elisabetha Rordorf in Zürich gegründet. Zweck der Stiftung ist die Überlassung des Ertrages aus dem Stiftungsvermögen,
-  um das wirtschaftliche und berufliche Fortkommen der Familienmitglieder zu erleichtern, insbesondere durch Stipendien." />
+  <meta property="og:title" content="{{ .Site.Params.appTitle }}" />
+  <meta property="og:description" content="{{ .Site.Params.appDescription }}" />
   <meta property="og:image" content="images/rordorf-icon.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="262" />
@@ -39,5 +33,8 @@
   <link rel="icon" href="images/favicon-192.png" sizes="192x192" />
   <link rel="apple-touch-icon-precomposed" href="images/favicon-180.png" />
   <meta name="msapplication-TileImage" content="images/favicon-270.png" />
+  <!-- pace.js progress bar -->
+  <style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:{{ .Site.Params.appColor }};position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style>
+  <script src="/pace.js"></script>
   <link rel="stylesheet" href="css/main.css" />
 </head>

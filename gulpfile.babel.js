@@ -24,10 +24,12 @@ gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 gulp.task("build", ["truncate", "sass", "js"], (cb) => buildSite(cb, [], "production"));
 gulp.task("build-preview", ["truncate", "sass", "js"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
 
+// Remove previously compiled CSS file
 gulp.task('truncate', function () {
     fs.truncate("./dist/css/main.css", (err) => {});
 });
 
+// SASS task
 gulp.task('sass', function () {
   // compile sass to css
   gulp.src("./src/css/*.scss")
@@ -39,6 +41,11 @@ gulp.task('sass', function () {
       .pipe(postcss([]))
       .pipe(gulp.dest("./dist/css"))
       .pipe(browserSync.stream());
+});
+
+// Copy PACE.js to build / dist
+gulp.task('pace', function () {
+    fs.copyFile("./src/pace/pace.js", "./dist/pace.js", (err) => {});
 });
 
 // Compile Javascript
@@ -57,7 +64,7 @@ gulp.task("js", (cb) => {
 });
 
 // Development server with browsersync
-gulp.task("server", ["hugo", "truncate", "sass", "js"], () => {
+gulp.task("server", ["hugo", "pace", "truncate", "sass", "js"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
