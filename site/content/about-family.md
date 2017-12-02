@@ -1,9 +1,8 @@
 ---
 title: "Über die Familie"
-date: 2017-12-01T17:44:36+01:00
+date: 2017-12-01T02:00:00+01:00
 draft: false
 ---
-
 <p>
     <img src="/images/rordorf-buch-cover.jpg" class="bookcover">
 

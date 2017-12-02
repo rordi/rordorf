@@ -4,6 +4,10 @@
 /* reset styles */
 @import "partials/reset.scss";
 
+/* extensions */
+@import "../../node_modules/include-media/dist/include-media";
+
+
 /* variables */
 
 // colors
@@ -16,15 +20,28 @@ $red: #A6200D;
 $gold: #bf931a;
 
 // transitions
-$tr-speed: 300ms;
+$tr-speed: 350ms;
 $tr-scope: all;
-$tr-mode: linear;
+$tr-mode: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+// breakpoints (for include-media)
+$breakpoints: (phone: 400px, tablet: 800px, desktop: 1024px);
+
+
+
+/* main styling */
 
 body {
   font-family: Assistant, 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   line-height: 1.67;
   background: url('/images/bg.png') repeat;
+
+  @include media("<=phone") {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
 }
 
 .container {
@@ -41,13 +58,34 @@ body {
   box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
   background: $white;
 
+  @include media("<=phone") {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 0 0 0;
+  }
+
 }
 
 .header,
 .main,
 .footer {
-  margin: 2em 1.4em;
+  margin: 0 1.4em;
+  padding: 1em 0;
+
+  @include media("<=phone") {
+    margin: 0 1em;
+    padding: 0.5em 0;
+  }
 }
+
+
+/* hyperlinks */
+
+a:hover {
+  transition: $tr-scope, $tr-speed, $tr-mode;
+}
+
+/* header styles */
 
 .header {
 
@@ -59,12 +97,22 @@ body {
     img {
       width: 120px;
       height: auto;
+
+      @include media("<=phone") {
+        width: 80px;
+        height: auto;
+      }
+
     }
   }
 
   .teaser {
     display: block;
     padding: 2.4em 1em 0 0;
+
+    @include media("<=phone") {
+      padding: 1.5em 1em 0 0;
+    }
   }
 
   h1 {
@@ -74,6 +122,10 @@ body {
     margin: 0;
     padding: 0;
     color: $darkgray;
+
+    @include media("<=phone") {
+      font-size: 1.6em;
+    }
   }
 
   h2 {
@@ -82,16 +134,24 @@ body {
     line-height: 100%;
     margin: 1em 0 0 0;
     color: $darkgray;
+
+    @include media("<=phone") {
+      font-size: 0.8em;
+      margin-top: 0.5em;
+    }
   }
 }
+
+
+/* navigation styles */
 
 .navigation {
   clear: left;
   list-style: none;
-  display: block;
   background: $red;
   color: $white;
-  padding: 0 0.5em;
+  padding: 0 1em;
+  display: block;
 
   li {
     display: inline-block;
@@ -125,13 +185,7 @@ body {
 }
 
 
-img.bookcover {
-  width: 150px;
-  height: auto;
-  margin: 0 1em 1em 0;
-  border: 3px solid $lightgray;
-  float: left;
-}
+/* main article styles */
 
 .main {
 
@@ -146,7 +200,19 @@ img.bookcover {
     font-family: Eczar, Garamond, "Times New Roman", serif;
     color: $darkgray;
   }
+
+  img.bookcover {
+    width: 150px;
+    height: auto;
+    margin: 0 1em 1em 0;
+    border: 3px solid $lightgray;
+    float: left;
+  }
+
 }
+
+
+/* footer styles */
 
 .footer {
   margin: 1em;

@@ -1,6 +1,6 @@
 ---
 title: "Kalender"
-date: 2017-12-01T17:44:36+01:00
+date: 2017-12-01T04:00:00+01:00
 draft: false
 ---
 <h2>Generalversammlung 2018</h2>

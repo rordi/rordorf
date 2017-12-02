@@ -6,8 +6,3 @@ title = "Rordorf Fonds | Rordorfscher Familienfonds | gegründet in Zürich 1710
 # URL Management
 [permalinks]
   post = "/:year/:month/:title/"
-
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]

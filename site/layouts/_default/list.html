@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="de">
+{{partial "head" . }}
+<body>
+<div class="container">
+  {{ partial "header" . }}
+  {{ partial "navbar" . }}
+  <div class="main">
+    {{ range first 2 .Data.Pages }}
+      {{ .Render "li" }}
+    {{ end }}
+  </div>
+  {{ partial "footer" . }}
+</div>
+</body>
+{{partial "javascript" . }}
+</html>
