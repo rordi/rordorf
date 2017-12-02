@@ -43,11 +43,6 @@ gulp.task('sass', function () {
         .pipe(browserSync.stream());
 });
 
-// Copy PACE.js to build / dist
-gulp.task('pace', function () {
-    fs.copyFile("./src/pace/pace.js", "./dist/pace.js", (err) => {});
-});
-
 // Compile Javascript
 gulp.task("js", (cb) => {
     const myConfig = Object.assign({}, webpackConfig);
@@ -64,7 +59,7 @@ gulp.task("js", (cb) => {
 });
 
 // Development server with browsersync
-gulp.task("server", ["hugo", "pace", "truncate", "sass", "js"], () => {
+gulp.task("server", ["hugo", "truncate", "sass", "js"], () => {
     browserSync.init({
         server: {
             baseDir: "./dist"
