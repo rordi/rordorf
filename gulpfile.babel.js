@@ -31,16 +31,16 @@ gulp.task('truncate', function () {
 
 // SASS task
 gulp.task('sass', function () {
-  // compile sass to css
-  gulp.src("./src/css/*.scss")
-      .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest("./dist/css"));
+    // compile sass to css
+    gulp.src("./src/css/*.scss")
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest("./dist/css"));
 
-  // post-process compiled CSS with PostCSS
-  gulp.src("./dist/css/main.css")
-      .pipe(postcss([]))
-      .pipe(gulp.dest("./dist/css"))
-      .pipe(browserSync.stream());
+    // post-process compiled CSS with PostCSS
+    gulp.src("./dist/css/main.css")
+        .pipe(postcss([]))
+        .pipe(gulp.dest("./dist/css"))
+        .pipe(browserSync.stream());
 });
 
 // Copy PACE.js to build / dist
@@ -50,46 +50,46 @@ gulp.task('pace', function () {
 
 // Compile Javascript
 gulp.task("js", (cb) => {
-  const myConfig = Object.assign({}, webpackConfig);
+    const myConfig = Object.assign({}, webpackConfig);
 
-  webpack(myConfig, (err, stats) => {
-    if (err) throw new gutil.PluginError("webpack", err);
-    gutil.log("[webpack]", stats.toString({
-      colors: true,
-      progress: true
-    }));
-    browserSync.reload();
-    cb();
-  });
+    webpack(myConfig, (err, stats) => {
+        if (err) throw new gutil.PluginError("webpack", err);
+        gutil.log("[webpack]", stats.toString({
+            colors: true,
+            progress: true
+        }));
+        browserSync.reload();
+        cb();
+    });
 });
 
 // Development server with browsersync
 gulp.task("server", ["hugo", "pace", "truncate", "sass", "js"], () => {
-  browserSync.init({
-    server: {
-      baseDir: "./dist"
-    }
-  });
-  watch("./src/js/**/*.js", () => { gulp.start(["js"]) });
-  watch("./src/css/**/*.scss", () => { gulp.start(["truncate", "sass"]) });
-  watch("./site/**/*", () => { gulp.start(["hugo"]) });
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+    });
+    watch("./src/js/**/*.js", () => { gulp.start(["js"]) });
+    watch("./src/css/**/*.scss", () => { gulp.start(["truncate", "sass"]) });
+    watch("./site/**/*", () => { gulp.start(["hugo"]) });
 });
 
 /**
  * Run hugo and build the site
  */
 function buildSite(cb, options, environment = "development") {
-  const args = options ? hugoArgsDefault.concat(options) : hugoArgsDefault;
+    const args = options ? hugoArgsDefault.concat(options) : hugoArgsDefault;
 
-  process.env.NODE_ENV = environment;
+    process.env.NODE_ENV = environment;
 
-  return spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
-    if (code === 0) {
-      browserSync.reload();
-      cb();
-    } else {
-      browserSync.notify("Hugo build failed :(");
-      cb("Hugo build failed");
-    }
-  });
+    return spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
+        if (code === 0) {
+            browserSync.reload();
+            cb();
+        } else {
+            browserSync.notify("Hugo build failed :(");
+            cb("Hugo build failed");
+        }
+    });
 }
