@@ -210,6 +210,29 @@ a:hover {
   }
 
   .postpre {
+
+    .author,
+    .date,
+    .wordcount {
+      color: $white;
+      border-radius: 4px;
+      padding: 3px 5px;
+      margin: 0 0.5em 1em 0;
+    }
+
+    .author {
+      background: $gray;
+    }
+
+    .date {
+      background: $gold;
+    }
+
+    .wordcount {
+      color: $gray;
+    }
+
+
     font-size: 0.8em;
     color: $darkgray;
     margin-bottom: 1em;

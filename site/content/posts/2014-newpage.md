@@ -1,5 +1,6 @@
 ---
 title: "Die neue Seite vom Rordorfschen Familienfonds"
+author: "Dietrich Rordorf"
 date: 2014-09-01T05:00:00+01:00
 draft: false
 ---

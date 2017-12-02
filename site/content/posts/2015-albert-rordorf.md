@@ -1,5 +1,6 @@
 ---
 title: "Gespräch mit Albert Rordorf – Auszug aus dem Monatsmagazin «reformiert.»"
+author: "Dietrich Rordorf"
 date: 2015-06-07T05:00:00+01:00
 draft: false
 ---

@@ -7,11 +7,20 @@
     {{ partial "navbar" . }}
     <div class="main">
 
-        <h1> {{ .Title }}</h1>
+        <h1>{{ .Title }}</h1>
 
         <div class="postpre">
+            <span class="author" title="Author">
+                {{ .Params.author }}
+            </span>
+            <span class="date" title="Publikationsdatum">
+                {{ .Date.Format "02.01.2006" }}
+            </span>
+            <span class="wordcount">
+                {{ .WordCount }} Wörter ({{ .ReadingTime }} Minuten)
+            </span>
             <em>
-                {{ .WordCount }} Wörter, {{ .ReadingTime }} Minute(n)
+
             </em>
         </div>
 
