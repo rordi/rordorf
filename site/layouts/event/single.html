@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+{{partial "head" . }}
+<body>
+<div class="container">
+    {{ partial "header" . }}
+    {{ partial "navbar" . }}
+    <article class="main">
+
+        <h1>{{ .Title }}</h1>
+
+        <div class="postpre">
+            {{ if .Params.eventDate }}
+            <span class="type">Termin</span>
+            <span class="date">
+                    am {{ dateFormat "02.01.2006" .Params.eventDate }}
+                    {{ if .Params.eventTime }}
+                        um {{ .Params.eventTime }} Uhr
+                    {{ end }}
+                </span>
+            {{ end }}
+        </div>
+
+        {{ .Content }}
+
+        <div class="postnav">
+            <span>
+                <a href="{{ .Prev }}"></a>
+            </span>
+            <span>
+                <a href="{{ .Next }}"></a>
+            </span>
+        </div>
+
+    </article>
+    {{ partial "footer" . }}
+</div>
+</body>
+{{partial "javascript" . }}
+</html>

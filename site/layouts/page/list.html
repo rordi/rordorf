@@ -6,7 +6,7 @@
   {{ partial "header" . }}
   {{ partial "navbar" . }}
   <div class="main">
-    <h1>Blog-Beiträge</h1>
+    <h1>Seiten</h1>
     <div class="cards">
       {{ range first 10 .Data.Pages }}
         {{ .Render "card"}}
