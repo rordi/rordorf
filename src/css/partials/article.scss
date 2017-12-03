@@ -1,17 +1,5 @@
 article {
 
-  h1 {
-    font-size: 1.6em;
-    font-family: Eczar, Garamond, "Times New Roman", serif;
-    color: $darkgray;
-  }
-
-  h2 {
-    font-size: 1.1em;
-    font-family: Eczar, Garamond, "Times New Roman", serif;
-    color: $darkgray;
-  }
-
   img.bookcover {
     width: 150px;
     height: auto;
@@ -22,7 +10,8 @@ article {
 
   .author,
   .date,
-  .wordcount {
+  .wordcount,
+  .type {
     color: $white;
     border-radius: 0.2em;
     padding: 0.1em 0.5em;
@@ -39,6 +28,10 @@ article {
 
   .wordcount {
     color: $gray;
+  }
+
+  .type {
+    background: darken($beige, 5%);
   }
 
   .postpre {

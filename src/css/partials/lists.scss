@@ -30,7 +30,8 @@
     &:hover {
       box-shadow: 0 0.3em 0.6em 0 rgba(0,0,0,0.15);
       transition: $tr-scope $tr-speed $tr-mode;
-      background-color: $ultralightgray;
+      background-color: lighten($ultralightgray, 3%);
+      border-color: darken($ultralightgray, 3%);
 
       h3 {
         color: $red;
@@ -44,6 +45,7 @@
       display: block;
       color: $darkgray;
       text-decoration: none;
+      transition: $tr-scope $tr-speed $tr-mode;
     }
 
     h3 {
@@ -51,6 +53,7 @@
       font-size: 1.2em;
       font-family: Eczar, Garamond, "Times New Roman", serif;
       color: $darkgray;
+      transition: $tr-scope $tr-speed $tr-mode;
     }
 
   }
