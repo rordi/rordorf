@@ -1,0 +1,38 @@
+.navigation {
+  clear: left;
+  list-style: none;
+  background: $red;
+  color: $white;
+  padding: 0 1em;
+  display: block;
+
+  li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  &.expanded {
+    background-color: $darkgray;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.4em 1em;
+    margin: 0;
+    text-decoration: none;
+    color: $white;
+    background-color: $red;
+    transition: $tr-scope $tr-speed $tr-mode;
+
+    &:hover {
+      color: $white;
+      background-color: $gold;
+      transition: $tr-scope $tr-speed $tr-mode;
+    }
+
+    &.active {
+      background-color: $darkgray;
+    }
+  }
+}

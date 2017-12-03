@@ -1,0 +1,58 @@
+.main {
+
+  .cards {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    @include media("<=phone") {
+      margin: 0;
+      text-align: left;
+    }
+
+  }
+
+  .card {
+    text-align: left;
+    font-size: 0.8em;
+    border: 1px solid $ultralightgray;
+    border-radius: 0.2em;
+    background: $white;
+    box-shadow: 0 0.2em 0.4em 0 rgba(0,0,0,0.05);
+    transition: $tr-scope $tr-speed $tr-mode;
+    padding: 0;
+
+    /* card sizing */
+    width: 250px;
+
+    /* elevate card hover effect */
+    &:hover {
+      box-shadow: 0 0.3em 0.6em 0 rgba(0,0,0,0.15);
+      transition: $tr-scope $tr-speed $tr-mode;
+      background-color: $ultralightgray;
+
+      h3 {
+        color: $red;
+        transition: $tr-scope $tr-speed $tr-mode;
+      }
+    }
+
+    /* linking of the card */
+    &> a {
+      padding: 1em;
+      display: block;
+      color: $darkgray;
+      text-decoration: none;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 1.2em;
+      font-family: Eczar, Garamond, "Times New Roman", serif;
+      color: $darkgray;
+    }
+
+  }
+
+}

@@ -1,0 +1,67 @@
+/* main styling */
+
+body {
+  font-family: Assistant, 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.67;
+  background: url('/images/bg.png') repeat;
+
+  @include media("<=phone") {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+}
+
+.container {
+
+  width: 90%;
+  max-width: 900px;
+
+  height: auto;
+  min-height: 90vh;
+
+  margin: 2em auto;
+  padding: 0;
+
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
+  background: $white;
+
+  @include media("<=phone") {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 0 0 0;
+  }
+
+  .header,
+  .main,
+  .footer {
+    margin: 0 1.4em;
+    padding: 1em 0;
+
+    @include media("<=phone") {
+      margin: 0 1em;
+      padding: 0.5em 0;
+    }
+  }
+}
+
+/* hyperlinks */
+
+a:hover {
+  transition: $tr-scope, $tr-speed, $tr-mode;
+}
+
+/* clears */
+
+.clear {
+  clear: both;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}

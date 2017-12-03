@@ -8,6 +8,8 @@ Heute war wieder unsere alljährliche Familienversammlung. Albert war munter mit
 mitbegracht.„Ein Gespräch mit Albert Rordorf“, Auszug aus dem Monatsmagazin «reformiert.» der Reformierten Kirchgemeinde
 Zürich-Sihlfeld.
 
+<!--more-->
+
 > Ich bin 1920 in Rapperswil geboren und in Lyon aufgewachsen. Wegen des 2. Weltkrieges kam ich im Juli 1942 in die
 > Schweiz zurück. Als Beruf habe ich Gärtner gelernt. Zuerst arbeitete ich in Pfäffikon in einer Erika-Kultur, später
 > wurde ich Friedhofsgärtner in Stäfa und Landschaftsgärtner in Biel und Genf. Nach Auslandaufenthalten in Holland

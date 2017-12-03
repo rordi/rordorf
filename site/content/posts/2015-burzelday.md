@@ -6,6 +6,8 @@ draft: false
 ---
 Es ist uns allen schon ein mal passiert: wir haben einen Geburtstag vergessen.
 
+<!--more-->
+
 Seit Facebook uns an Geburtstage erinnert, hat sich die Problematik sicherlich schon deutlich entschärft. Was aber,
 wenn man die Geburtstage von einigen Dutzend oder Hunderter Mitglieder verfolgen muss, und nur betagten Personen oder
  an runden Geburtstage aktiv werden muss? Was, wen viele Personen gar kein Facebook Profil haben?

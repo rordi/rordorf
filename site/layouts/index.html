@@ -6,9 +6,12 @@
         {{ partial "header" . }}
         {{ partial "navbar" . }}
         <div class="main">
-            {{ range first 10 .Data.Pages }}
-                {{ .Render "li"}}
-            {{ end }}
+            <div class="cards">
+                {{ range first 10 .Data.Pages }}
+                    {{ .Render "card"}}
+                {{ end }}
+            </div>
+            <div class="clear-left"></div>
         </div>
         {{ partial "footer" . }}
     </div>

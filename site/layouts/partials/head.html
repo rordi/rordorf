@@ -1,6 +1,8 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ $.Site.Title }}</title>
+  <title>
+    {{ if .Title }}{{ .Title }} – {{ end }}{{ $.Site.Title }}
+  </title>
   <base href="{{ $.Site.BaseURL }}">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name='language' content='DE'>

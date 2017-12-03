@@ -1,0 +1,15 @@
+<div class="card">
+    <a href="{{ .Permalink }}">
+        <article class="summary">
+            <h3>
+                {{ .Title}}
+            </h3>
+            <p>
+                {{ .Summary }}
+            </p>
+            <span class="date">
+                {{ .Date.Format "02.01.2006" }}
+            </span>
+        </article>
+    </a>
+</div>

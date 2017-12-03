@@ -6,6 +6,7 @@ draft: false
 ---
 Wir haben für die Familienstiftung diese neue Website kreiert.
 
+<!--more-->
 
 Liebe Familienmitglieder,
 

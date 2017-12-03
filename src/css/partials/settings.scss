@@ -1,0 +1,17 @@
+// colors
+$white: #FAFAFA;
+$beige: #D1CABB;
+$ultralightgray: #EAEAEA;
+$lightgray: #CCCCCC;
+$gray: #777777;
+$darkgray: #333333;
+$red: #A6200D;
+$gold: #bf931a;
+
+// transitions
+$tr-speed: 350ms;
+$tr-scope: all;
+$tr-mode: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+// breakpoints (for include-media)
+$breakpoints: (phone: 400px, tablet: 800px, desktop: 1024px);

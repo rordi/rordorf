@@ -1,0 +1,54 @@
+.header {
+
+  .logo {
+    display: block;
+    float: left;
+    padding: 0 1em 0.5em 0;
+
+    img {
+      width: 120px;
+      height: auto;
+
+      @include media("<=phone") {
+        width: 80px;
+        height: auto;
+      }
+
+    }
+  }
+
+  .teaser {
+    display: block;
+    padding: 1.4em 1em 0 0;
+
+    @include media("<=phone") {
+      padding: 1.5em 1em 0 0;
+    }
+  }
+
+  h1 {
+    font-family: Eczar, Garamond, "Times New Roman", serif;
+    font-size: 1.8em;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+    color: $darkgray;
+
+    @include media("<=phone") {
+      font-size: 1.6em;
+    }
+  }
+
+  h2 {
+    font-family: Eczar, Garamond, "Times New Roman", serif;
+    font-size: 1em;
+    line-height: 100%;
+    margin: 1em 0 0 0;
+    color: $darkgray;
+
+    @include media("<=phone") {
+      font-size: 0.8em;
+      margin-top: 0.5em;
+    }
+  }
+}
