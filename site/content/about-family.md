@@ -1,6 +1,6 @@
 ---
 title: "Über die Familie"
-date: 2017-12-01T02:00:00+01:00
+date: 2016-01-18T02:00:00+01:00
 draft: false
 ---
 <p>

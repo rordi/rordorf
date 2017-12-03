@@ -1,6 +1,6 @@
 ---
 title: "Über den Rordorf Fonds"
-date: 2017-12-01T03:00:00+01:00
+date: 2014-09-01T03:00:00+01:00
 draft: false
 ---
 <p>

@@ -7,7 +7,7 @@
         {{ partial "navbar" . }}
         <div class="main">
             <div class="cards">
-                {{ range first 10 .Data.Pages }}
+                {{ range first 50 .Data.Pages }}
                     {{ .Render "card"}}
                 {{ end }}
             </div>
