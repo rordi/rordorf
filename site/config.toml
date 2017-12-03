@@ -14,3 +14,6 @@ title = "Rordorf Fonds | Rordorfscher Familienfonds | gegründet in Zürich 1710
 # URL Management
 [permalinks]
   posts = "/:year/:month/:title/"
+
+# Archetypes Management
+MetaDataFormat = "toml"

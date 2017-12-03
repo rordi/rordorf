@@ -1,5 +1,45 @@
 article {
 
+
+  .gallery {
+    display: block;
+    clear: both;
+
+    &:after {
+      clear: both;
+    }
+
+    .image {
+      height: auto;
+
+      img {
+        display: inline;
+        height: auto;
+      }
+    }
+
+    &.width-300 {
+      .image {
+        width: 300px;
+        img {
+          width: 300px;
+        }
+      }
+    }
+
+    &.width-400 {
+      .image {
+        width: 400px;
+        img {
+          width: 400px;
+        }
+      }
+    }
+
+
+  }
+
+
   img.bookcover {
     width: 150px;
     height: auto;
@@ -12,6 +52,7 @@ article {
   .date,
   .wordcount,
   .type {
+    white-space: nowrap;
     color: $white;
     border-radius: 0.2em;
     padding: 0.1em 0.5em;
