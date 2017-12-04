@@ -1,7 +1,8 @@
-let Minigrid = require("minigrid");
-
-let cardGrid = null;
-let imgGrid = null;
+let Minigrid = require("minigrid"),
+    cardGrid = null,
+    imgGrid = null,
+    scrollTimer = null
+;
 
 /**
  * function to init the cards grid
@@ -34,7 +35,7 @@ let init = () => {
 };
 
 /**
- * function to redrwa the cards grid
+ * function to redraw the cards grid
  */
 let update = () => {
     if (cardGrid) {
@@ -46,8 +47,22 @@ let update = () => {
 };
 
 /**
+ * delayed scroll callback
+ */
+let scroll = () => {
+    if(scrollTimer) {
+        window.clearTimeout(scrollTimer);
+    }
+
+    scrollTimer = window.setTimeout(function() {
+        update();
+    }, 200);
+};
+
+/**
  * register event listeners
  */
 document.addEventListener('DOMContentLoaded', init);
 window.addEventListener('resize', update);
+window.addEventListener('scroll', scroll);
 
