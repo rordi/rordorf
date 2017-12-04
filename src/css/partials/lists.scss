@@ -35,7 +35,7 @@
 
       h3 {
         color: $red;
-        transition: $tr-scope $tr-speed $tr-mode;
+        transition: color $tr-speed $tr-mode;
       }
     }
 
@@ -51,7 +51,7 @@
     h3 {
       font-size: 1.3em;
       margin: 0 0 0.8em 0;
-      transition: $tr-scope $tr-speed $tr-mode;
+      transition: color $tr-speed $tr-mode;
     }
 
   }
