@@ -12,57 +12,57 @@ Hier einige Impressionen vom Klosterrundgang und dem Kreuzgang des Klosters Wett
 
 <div class="gallery width-400">
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/01.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/01.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/02.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/02.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/03.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/03.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/04.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/04.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/05.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/05.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/06.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/06.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/07.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/07.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/08.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/08.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/09.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/09.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/10.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/10.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/11.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/11.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/12.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/12.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/13.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/13.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/14.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/14.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/15.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/15.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/16.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/16.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/17.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/17.jpg">
     </div>
     <div class="image">
-        <img alt="Ausflug Wettingen" src="/images/wettingen/18.jpg">
+        <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/18.jpg">
     </div>
 </div>

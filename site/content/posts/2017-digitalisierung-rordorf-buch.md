@@ -13,7 +13,7 @@ Ausland.
 <!--more-->
 
 <p>
-    <img src="/images/rordorf-buch-cover.jpg" class="bookcover">
+    <img src="/images/uploads/rordorf-buch-cover.jpg" class="bookcover">
 </p>
 
 Angekommen ist es bei einem spezialisierten Dienstleister in Berlin. Dort wurde der Buchrücken abgesägt, und in der Folge

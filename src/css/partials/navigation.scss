@@ -1,7 +1,7 @@
 .navbar {
   clear: left;
-  background-color: $red;
   color: $white;
+  background-color: $red;
 }
 
 .menu {
@@ -65,9 +65,19 @@
 /* animated hamburger menu icon -> changes to X when menu open*/
 
 .toggler {
-  float: right;
   border: none;
+  outline: none;
+  border-radius: 0;
   background: none;
+  width:100%;
+  padding: 0.4em 1em;
+
+  &:focus,
+  &:active {
+    border: none;
+    background: none;
+    outline: none;
+  }
 
   @include media(">phone") {
     display: none;
@@ -76,6 +86,7 @@
 }
 
 .animated-menu-icon {
+  float: right;
   width: 32px;
   height: 25px;
   margin: 8px 0 0 2px !important;

@@ -4,7 +4,7 @@ date: 2016-01-18T02:00:00+01:00
 draft: false
 ---
 <p>
-    <img src="/images/rordorf-buch-cover.jpg" class="bookcover">
+    <img src="/images/uploads/rordorf-buch-cover.jpg" class="bookcover">
 
     <a href="https://www.dropbox.com/s/z5oeo6fjxxcpa0c/Rordorf-Geschlecht-Mitteilungen.pdf?dl=0" target="_blank">
         Mitteilungen über das Rordorf-Geschlecht (Als Manuscript für die Familie gedruckt).
@@ -15,7 +15,7 @@ draft: false
 <div style="clear: left"></div>
 
 <p>
-    <img src="/images/rordorf-brochure-cover.png" class="bookcover">
+    <img src="/images/uploads/rordorf-brochure-cover.png" class="bookcover">
 
     <a href="/publications/rordorf-brochure.pdf" target="_blank">
         Das alte Stadtzürcher Geschlecht Rordorf 1349-1967 (Eine alte Familie macht von sich reden: Das Stadtzürcher Geschlecht
