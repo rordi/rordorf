@@ -3,7 +3,8 @@ let Minigrid = require("minigrid"),
     imgGrid = null,
     scrollTimer = null,
     menu = document.getElementById('menu'),
-    toggler = document.getElementById('toggler')
+    toggler = document.getElementById('toggler'),
+    togglericon = document.getElementById('togglericon')
 ;
 
 /**
@@ -77,9 +78,11 @@ let toggleNavigation = function() {
     if(menu.classList.contains('expanded')) {
         // close nav
         menu.classList.remove('expanded');
+        togglericon.classList.remove('expanded');
     } else {
         // open nav
         menu.classList.add('expanded');
+        togglericon.classList.add('expanded');
     }
 };
 toggler.addEventListener('click', function() {
