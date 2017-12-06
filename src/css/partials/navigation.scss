@@ -66,6 +66,8 @@
 
 .toggler {
   float: right;
+  border: none;
+  background: none;
 
   @include media(">phone") {
     display: none;
