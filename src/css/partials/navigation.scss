@@ -1,10 +1,17 @@
-.navigation {
+.navbar {
   clear: left;
-  list-style: none;
-  background: $red;
+  background-color: $red;
   color: $white;
+}
+
+.menu {
+  list-style: none;
   padding: 0 1em;
-  display: block;
+  clear: right;
+
+  @include media(">phone") {
+    display: block;
+  }
 
   li {
     display: inline-block;
@@ -12,8 +19,26 @@
     margin: 0;
   }
 
-  &.expanded {
-    background-color: $darkgray;
+  @include media("<=phone") {
+    ul {
+      height: 0;
+      transition: $tr-scope $tr-speed $tr-mode;
+    }
+
+    li {
+      display: none;
+    }
+
+    &.expanded {
+      ul {
+        height: auto;
+        transition: $tr-scope $tr-speed $tr-mode;
+      }
+
+      li {
+        display: block;
+      }
+    }
   }
 
   a {
@@ -35,4 +60,77 @@
       background-color: $darkgray;
     }
   }
+}
+
+/* animated hamburger menu icon -> changes to X when menu open*/
+
+.toggler {
+  float: right;
+
+  @include media(">phone") {
+    display: none;
+  }
+
+}
+
+.animated-menu-icon {
+  width: 32px;
+  height: 25px;
+  margin: 8px 0 0 2px !important;
+  position: relative;
+  vertical-align:middle;
+  transform: rotate(0deg);
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+.animated-menu-icon > div {
+  display:block;
+  width:24px;
+  position: absolute;
+  padding: 0;
+  background-color: $white;
+  opacity: 1;
+  left: 0;
+  height: 3px;
+  transform: rotate(0deg);
+}
+
+.animated-menu-icon div:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+  transition: $tr-speed $tr-mode;
+}
+
+.animated-menu-icon div:nth-child(2) {
+  top: 7px;
+  transform-origin: left center;
+  transition: 0.15s linear;
+}
+
+.animated-menu-icon div:nth-child(3) {
+  top: 14px;
+  transform-origin: left center;
+  transition: $tr-speed $tr-mode;
+}
+
+.animated-menu-icon.open div:nth-child(1) {
+  transform: rotate(45deg);
+  width:22px;
+  height: 3px;
+  top: 6px;
+  left: 0px;
+}
+
+.animated-menu-icon.open div:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.animated-menu-icon.open div:nth-child(3) {
+  transform: rotate(-45deg);
+  width:22px;
+  height: 3px;
+  top: 6px;
+  left: 0px;
 }

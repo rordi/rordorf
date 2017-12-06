@@ -1,7 +1,9 @@
 let Minigrid = require("minigrid"),
     cardGrid = null,
     imgGrid = null,
-    scrollTimer = null
+    scrollTimer = null,
+    menu = document.getElementById('menu'),
+    toggler = document.getElementById('toggler')
 ;
 
 /**
@@ -64,5 +66,22 @@ let scroll = () => {
  */
 document.addEventListener('DOMContentLoaded', init);
 window.addEventListener('resize', update);
+document.addEventListener('load', update);
 window.addEventListener('scroll', scroll);
 
+/**
+ * menu toggle on small screens
+ */
+    // toggle the navigation UI
+let toggleNavigation = function() {
+    if(menu.classList.contains('expanded')) {
+        // close nav
+        menu.classList.remove('expanded');
+    } else {
+        // open nav
+        menu.classList.add('expanded');
+    }
+};
+toggler.addEventListener('click', function() {
+    toggleNavigation();
+});
