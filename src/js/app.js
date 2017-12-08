@@ -2,7 +2,7 @@ let Minigrid = require("minigrid"),
     cardGrid = null,
     imgGrid = null,
     scrollTimer = null,
-    menu = document.getElementById('menu'),
+    menu = document.getElementById('collapsible'),
     toggler = document.getElementById('toggler'),
     togglericon = document.getElementById('togglericon')
 ;
