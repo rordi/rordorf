@@ -1,11 +1,8 @@
 .main {
 
   .cards {
-    display: block;
-    width: 100%;
     margin: 0 auto;
     padding: 0;
-    text-align: center;
 
     @include media("<=phone") {
       margin: 0;
@@ -15,22 +12,30 @@
   }
 
   .card {
+    position: relative;
+    display: inline-block;
     text-align: left;
     border: 1px solid $ultralightgray;
     border-radius: 0.2em;
-    background: $white;
     box-shadow: 0 0.2em 0.4em 0 rgba(0,0,0,0.05);
     transition: $tr-scope $tr-speed $tr-mode;
     padding: 0;
 
+    /* preps for hover fill effect */
+    background-image: linear-gradient(lighten($ultralightgray, 3%), lighten($ultralightgray, 3%));
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 100% 0%;
+
+
     /* card sizing */
     width: 320px;
 
-    /* elevate card hover effect */
+    /* elevate and fill card on hover effect */
     &:hover {
-      box-shadow: 0 0.3em 0.6em 0 rgba(0,0,0,0.15);
       transition: $tr-scope $tr-speed $tr-mode;
-      background-color: lighten($ultralightgray, 3%);
+      box-shadow: 0 0.2em 0.7em 0 rgba(0,0,0,0.2);
+      background-size: 100% 100%; // hover fill effect
       border-color: darken($ultralightgray, 3%);
 
       h3 {

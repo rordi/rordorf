@@ -52,11 +52,12 @@ article {
   .date,
   .wordcount,
   .type {
-    white-space: nowrap;
+    display: inline-block;
+    white-space: nowrap !important;
     color: $white;
     border-radius: 0.2em;
     padding: 0.1em 0.5em;
-    margin: 0 0.5em 1em 0;
+    margin: 0 0.5em 0.5em 0;
   }
 
   .author {
@@ -72,7 +73,7 @@ article {
   }
 
   .type {
-    background: darken($beige, 5%);
+    background: darken($beige, 7%);
   }
 
   .postpre {
