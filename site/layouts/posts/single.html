@@ -5,26 +5,25 @@
 <div class="container">
     {{ partial "header" . }}
     {{ partial "navbar" . }}
-    <article class="main">
+    <article class="main" itemscope itemtype="http://schema.org/Article">
 
-        <h1>{{ .Title }}</h1>
+        <h1 itemprop="name">{{ .Title }}</h1>
 
         <div class="postpre">
-            <span class="author" title="Author">
+            <span class="author" title="Author" itemprop="author">
                 {{ .Params.author }}
             </span>
-            <span class="date" title="Publikationsdatum">
+            <span class="date" title="Publikationsdatum" itemprop="datePublished">
                 {{ .Date.Format "02.01.2006" }}
             </span>
             <span class="wordcount">
-                {{ .WordCount }} Wörter ({{ .ReadingTime }} Minuten)
+                <span itemprop="wordCount">{{ .WordCount }}</span> Wörter ({{ .ReadingTime }} Minuten)
             </span>
-            <em>
-
-            </em>
         </div>
 
-        {{ .Content }}
+        <div itemprop="articleBody">
+            {{ .Content }}
+        </div>
 
         <div class="postnav">
             <span>

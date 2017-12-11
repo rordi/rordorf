@@ -5,14 +5,14 @@
 <div class="container">
     {{ partial "header" . }}
     {{ partial "navbar" . }}
-    <article class="main">
+    <article class="main" itemscope itemtype="http://schema.org/BusinessEvent">
 
-        <h1>{{ .Title }}</h1>
+        <h1 itemprop="name">{{ .Title }}</h1>
 
         <div class="postpre">
             {{ if .Params.eventDate }}
             <span class="type">Termin</span>
-            <span class="date">
+            <span class="date" itemprop="startDate">
                     am {{ dateFormat "02.01.2006" .Params.eventDate }}
                     {{ if .Params.eventTime }}
                         um {{ .Params.eventTime }} Uhr
@@ -21,7 +21,9 @@
             {{ end }}
         </div>
 
-        {{ .Content }}
+        <div itemprop="description">
+            {{ .Content }}
+        </div>
 
         <div class="postnav">
             <span>
