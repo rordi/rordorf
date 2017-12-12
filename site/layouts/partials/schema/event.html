@@ -1,0 +1,16 @@
+<script type="application/ld+json">
+{
+	"@context" : "http://schema.org",
+	"@type" : "BusinessEvent",
+	"name" : "{{ .Title }}",
+	"startDate": "{{ dateFormat "2006-01-02T15:04:05Z" .Params.eventDate }}",
+	"description" : "{{ .Plain }}",
+	"location": {
+	    "@type": "Place",
+	    "address": {
+	        "@type": "Text",
+	        "text": "{{ .Params.location }}"
+	    }
+	}
+}
+</script>

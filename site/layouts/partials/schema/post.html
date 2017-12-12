@@ -1,0 +1,21 @@
+<script type="application/ld+json">
+{
+	"@context" : "http://schema.org",
+	"@type" : "Article",
+	"name" : "{{ .Title }}",
+	"author": "{{ .Params.author }}",
+	"datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z" }}",
+	"dateModified": "{{ .Date.Format "2006-01-02T15:04:05Z" }}",
+	"wordCount": "{{ .WordCount }}",
+	"headline": "{{ .Plain | truncate 107 "..." }}",
+	"articleBody": "{{ .Plain }}",
+	"publisher": {
+		"@type": "Organization",
+		"name": "{{ .Site.Params.appPublisher }}",
+		"logo" : {
+		    "type": "ImageObject",
+		    "url": "https://www.rordorf.org/images/rordorf-icon.jpg"
+        }
+	}
+}
+</script>
