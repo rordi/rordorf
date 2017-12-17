@@ -2,3 +2,5 @@ node_modules/
 dist/
 .idea/
 .DS_Store
+site/.DS_Store
+site/static/.DS_Store

@@ -11,6 +11,17 @@ media_folder: "site/static/images/uploads" # Folder where user uploaded files sh
 public_folder: "/images/uploads"
 
 collections: # A list of collections the CMS should be able to edit
+
+  - name: "page"
+    label: "Seiten"
+    folder: "site/content"
+    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Titel", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Publikationsdatum", name: "date", widget: "datetime"}
+      - {label: "Seiteninhalt", name: "body", widget: "markdown"}
+
   - name: "post" # Used in routes, e.g., /admin/collections/:slug/edit
     label: "Blogbeiträge" # Used in the UI, e.g., "New Post"
     folder: "site/content/posts" # The path to the folder where the documents are stored

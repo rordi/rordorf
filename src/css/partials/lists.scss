@@ -27,7 +27,6 @@
     background-position: 50% 100%;
     background-size: 100% 0%;
 
-
     /* card sizing */
     width: 320px;
 
@@ -42,15 +41,25 @@
         color: $red;
         transition: color $tr-speed $tr-mode;
       }
+
+      .featuredimage {
+        transition: filter $tr-speed $tr-mode;
+        filter: sepia(0) opacity(0.8);
+      }
+
     }
 
     /* linking of the card */
     &> a {
-      padding: 1em;
+      padding: 0;
       display: block;
       color: $darkgray;
       text-decoration: none;
       transition: $tr-scope $tr-speed $tr-mode;
+    }
+
+    article {
+      padding: 1em;
     }
 
     h3 {
@@ -58,6 +67,19 @@
       line-height: 125%;
       margin: 0 0 0.4em 0;
       transition: color $tr-speed $tr-mode;
+    }
+
+    .featuredimage {
+      width: 320px !important;
+      height: 198px;
+      overflow: hidden;
+      display: block;
+      padding: 0;
+      border-radius: 0.2em 0.2em 0 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: filter $tr-speed $tr-mode;
+      filter: sepia(1) opacity(0.5);
     }
 
   }

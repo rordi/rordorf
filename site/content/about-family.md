@@ -15,7 +15,7 @@ draft: false
 <div style="clear: left"></div>
 
 <p>
-    <img src="/images/uploads/rordorf-brochure-cover.png" class="bookcover">
+    <img src="/images/uploads/rordorf-brochure-cover.jpg" class="bookcover">
 
     <a href="/publications/rordorf-brochure.pdf" target="_blank">
         Das alte Stadtzürcher Geschlecht Rordorf 1349-1967 (Eine alte Familie macht von sich reden: Das Stadtzürcher Geschlecht
