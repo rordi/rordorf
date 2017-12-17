@@ -22,10 +22,13 @@
     padding: 0;
 
     /* preps for hover fill effect */
-    background-image: linear-gradient(lighten($ultralightgray, 3%), lighten($ultralightgray, 3%));
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    background-size: 100% 0%;
+    .summary {
+      transition: $tr-scope $tr-speed $tr-mode;
+      background-image: linear-gradient(lighten($ultralightgray, 3%), lighten($ultralightgray, 3%));
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+      background-size: 100% 0;
+    }
 
     /* card sizing */
     width: 320px;
@@ -33,9 +36,13 @@
     /* elevate and fill card on hover effect */
     &:hover {
       transition: $tr-scope $tr-speed $tr-mode;
-      box-shadow: 0 0.2em 0.7em 0 rgba(0,0,0,0.2);
-      background-size: 100% 100%; // hover fill effect
+      box-shadow: 0.05em 0.2em 0.7em 0 rgba(0,0,0,0.25);
       border-color: darken($ultralightgray, 3%);
+
+      .summary {
+        transition: $tr-scope $tr-speed $tr-mode;
+        background-size: 100% 100%; // hover fill effect
+      }
 
       h3 {
         color: $red;
@@ -44,7 +51,7 @@
 
       .featuredimage {
         transition: filter $tr-speed $tr-mode;
-        filter: sepia(0) opacity(0.8);
+        filter: grayscale(0) opacity(0.9);
       }
 
     }
@@ -71,15 +78,16 @@
 
     .featuredimage {
       width: 320px !important;
-      height: 198px;
+      height: 190px;
       overflow: hidden;
       display: block;
       padding: 0;
       border-radius: 0.2em 0.2em 0 0;
+      background-color: $gray;
       background-repeat: no-repeat;
       background-size: cover;
       transition: filter $tr-speed $tr-mode;
-      filter: sepia(1) opacity(0.5);
+      filter: grayscale(0.6) opacity(0.6);
     }
 
   }

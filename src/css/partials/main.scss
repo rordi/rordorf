@@ -4,7 +4,7 @@ body {
   font-family: Assistant, 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   line-height: 1.67;
-  background: url('/images/bg.png') repeat;
+  background: #E2D9CA url('/images/bg.png') repeat;
 
   @include media("<=phone") {
     font-size: 1em;
