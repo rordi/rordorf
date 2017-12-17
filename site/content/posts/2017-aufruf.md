@@ -1,10 +1,9 @@
 ---
-title: "Aufruf im Vorfeld der Jahresversammlung"
-date:  2017-06-05T19:28:00+01:00
-draft: false
-author: "Dietrich Rordorf"
+title: Aufruf im Vorfeld der Jahresversammlung
+date: 2017-06-05T18:28:00.000Z
+author: Dietrich Rordorf
 tags: []
-image: ""
+image: /images/uploads/stop-634941_12801-768x512.jpg
 ---
 Einige Punkte zur allgemeinen Erinnerung hinsichtlich der Jahresversammlung vom nächsten Sonntag, 11. Juni 2017.
 
