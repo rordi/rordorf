@@ -1,12 +1,14 @@
-import gulp from "gulp";
 import {spawn} from "child_process";
 import fs from "fs";
 import hugoBin from "hugo-bin";
 import gutil from "gulp-util";
 import sass from "gulp-sass";
 import postcss from "gulp-postcss";
+import autoprefixer from "autoprefixer";
+import cssnano from "cssnano";
 import BrowserSync from "browser-sync";
 import watch from "gulp-watch";
+import gulp from "gulp";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
 
@@ -31,16 +33,20 @@ gulp.task('truncate', function () {
 
 // SASS task
 gulp.task('sass', function () {
-    // compile sass to css
+    let processors = [
+        autoprefixer({
+            browsers: ['last 2 versions', '> 2%'] // last 2 versions or exceeding 2% market share
+        }),
+        cssnano()
+    ];
+
+    // compile sass to css and post-process
     gulp.src("./src/css/*.scss")
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest("./dist/css"));
-
-    // post-process compiled CSS with PostCSS
-    gulp.src("./dist/css/main.css")
-        .pipe(postcss([]))
+        .pipe(postcss(processors))
         .pipe(gulp.dest("./dist/css"))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.stream())
+    ;
 });
 
 // Compile Javascript
