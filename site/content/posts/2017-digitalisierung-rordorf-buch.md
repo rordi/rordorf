@@ -1,10 +1,9 @@
 ---
-title: "Digitalisierung der „Mitteilungen über das Rordorf-Geschlecht“"
-date:  2017-07-31T19:45:07+01:00
-draft: false
-author: "Dietrich Rordorf"
+title: Digitalisierung der „Mitteilungen über das Rordorf-Geschlecht“
+date: 2017-07-31T18:45:07.000Z
+author: Dietrich Rordorf
 tags: []
-image: ""
+image: /images/uploads/rordorf-buch-cover.jpg
 ---
 Während der letzten Vorstandssitzung haben wir ein Exemplar der zweiten Auflage der „Mitteilungen über das Rordorf-Geschlecht“
 von 1972 aus dem Familien-Archiv entwendet. Das Buch wurde geopfert und ging auf eine 800 Kilometer weite Reise in das benachbarte
