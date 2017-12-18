@@ -9,9 +9,14 @@
         <h1>{{ .Title }}</h1>
 
         <div class="postpre">
-            <span class="author">
-                {{ .Params.author }}
-            </span>
+            {{ if .Params.authors }}
+                {{ range .Params.authors }}
+                    <a class="author" href="{{ "/authors/" | relLangURL }}{{ . | urlize }}">
+                        {{ . }}
+                    </a>
+                {{ end }}
+            {{ end }}
+
             <span class="date" title="Publikationsdatum">
                 {{ .Date.Format "02.01.2006" }}
             </span>
@@ -26,6 +31,19 @@
 
         <div>
             {{ .Content }}
+        </div>
+
+        <div class="postclose">
+            {{ if .Params.category }}
+                <h3>Kategorie</h3>
+                <a class="category" href="{{ "/categories/" | relLangURL }}{{ .Params.category | urlize }}">{{ . }}</a>
+            {{end}}
+            {{ if .Params.tags }}
+                <h3>Schlagwörter</h3>
+                {{range .Params.tags}}
+                    <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                {{end}}
+            {{end}}
         </div>
 
         <div class="postnav">

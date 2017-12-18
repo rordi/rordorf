@@ -53,13 +53,16 @@ article {
   .author,
   .date,
   .wordcount,
-  .type {
+  .type,
+  .tag,
+  .category {
     display: inline-block;
     white-space: nowrap !important;
     color: $white;
     border-radius: 0.2em;
     padding: 0.1em 0.5em;
     margin: 0 0.5em 0.5em 0;
+    text-decoration: none;
   }
 
   .author {
@@ -76,6 +79,14 @@ article {
 
   .type {
     background: darken($beige, 7%);
+  }
+
+  .tag {
+    background: desaturate($red, 40%);
+  }
+
+  .category {
+    background: $red;
   }
 
   .postpre {

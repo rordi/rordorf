@@ -2,7 +2,7 @@
 title: "Impressionen aus dem Kloster Wettingen"
 date:  2016-06-12T18:34:02+01:00
 draft: false
-author: "Dietrich Rordorf"
+authors: ["Dietrich Rordorf"]
 tags: []
 image: "/images/uploads/wettingen.jpg"
 ---

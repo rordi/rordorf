@@ -19,3 +19,9 @@ title = "Rordorf Fonds | Rordorfscher Familienfonds | gegründet in Zürich 1710
 
 # Archetypes Management
 MetaDataFormat = "yaml"
+
+# taxonomies
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    author = "authors"

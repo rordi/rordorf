@@ -28,12 +28,25 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{year}}-{{slug}}" # generated filename
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Titel", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Publikationsdatum", name: "date", widget: "datetime"}
-      - {label: "Autor", name: "author", widget: "select", options: ["Dietrich Rordorf"]}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Bild", name: "image", widget: "image"}
-      - {label: "Beitrag", name: "body", widget: "markdown"}
+      - label: "Titel"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+      - label: "Publikationsdatum"
+        name: "date"
+        widget: "datetime"
+      - label: "Autoren"
+        name: "authors"
+        widget: "list"
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+      - label: "Bild"
+        name: "image"
+        widget: "image"
+      - label: "Beitrag"
+        name: "body"
+        widget: "markdown"
 
   - name: "event"
     label: "Kalendereinträge"
@@ -41,11 +54,28 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{year}}-{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Titel", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Publikationsdatum", name: "date", widget: "datetime"}
-      - {label: "Event Startdatum", name: "eventDate", widget: "datetime"}
-      - {label: "Event Startzeit", name: "eventTime", widget: "string"}
-      - {label: "Event Ort", name: "location", widget: "string"}
-      - {label: "Autor", name: "author", widget: "select", options: ["Dietrich Rordorf"]}
-      - {label: "Bild", name: "image", widget: "image"}
-      - {label: "Beschreibung", name: "body", widget: "markdown"}
+      - label: "Titel"
+        name: "title"
+        widget: "string"
+        tagname: "h1"
+      - label: "Publikationsdatum"
+        name: "date"
+        widget: "datetime"
+      - label: "Event Startdatum"
+        name: "eventDate"
+        widget: "datetime"
+      - label: "Event Startzeit"
+        name: "eventTime"
+        widget: "string"
+      - label: "Event Ort"
+        name: "location"
+        widget: "string"
+      - label: "Autoren"
+        name: "authors"
+        widget: "list"
+      - label: "Bild"
+        name: "image"
+        widget: "image"
+      - label: "Beschreibung"
+        name: "body"
+        widget: "markdown"

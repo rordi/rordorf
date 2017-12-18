@@ -1,6 +1,6 @@
 ---
 title: "Ursula Fricke, geb. Rordorf"
-author: "Dietrich Rordorf"
+authors: ["Dietrich Rordorf"]
 date: 2015-06-08T05:00:00+01:00
 draft: false
 ---

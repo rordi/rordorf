@@ -1,16 +1,22 @@
 <head>
   <meta charset="utf-8">
   <title>
-    {{ if .Title }}{{ .Title }} – {{ end }}{{ $.Site.Title }}
+    {{ if .Title }}{{ .Title | plainify }} – {{ end }}{{ $.Site.Title }}
   </title>
   {{ partial "head-common" . }}
+  <meta name="description" content="{{ .Summary| plainify }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{ .Title }}" />
-  <meta name="twitter:description" content="{{ .Summary }}" />
+  <meta name="twitter:description" content="{{ .Summary| plainify }}" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ .Title }}" />
-  <meta property="og:description" content="{{ .Summary }}" />
+  <meta property="og:description" content="{{ .Summary | plainify }}" />
   <meta property="og:url" content="{{ .Site.Params.appSitemapUrl }}{{ .Permalink }}" />
+  {{ if .Params.authors }}
+    {{ range .Params.authors }}
+      <meta property="og:author" content="{{ . | plainify }}" />
+    {{ end }}
+  {{ end }}
   {{ if .Params.image }}
     <link rel="image_src" href="{{ .Params.image }}" />
     <meta name="twitter:image" content="{{ .Params.image }}" />

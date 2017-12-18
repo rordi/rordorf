@@ -1,7 +1,7 @@
 ---
 title: Die neue Seite vom Rordorfschen Familienfonds
 date: 2014-09-01T04:00:00.000Z
-author: Dietrich Rordorf
+authors: ["Dietrich Rordorf"]
 tags:
   - website
 image: /images/uploads/rordorf-website-mockdrop-768x510.jpg

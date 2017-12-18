@@ -2,7 +2,7 @@
 title: "Neuer Webseiten-Bereich: Über die Familie"
 date:  2016-01-18T17:48:32+01:00
 draft: false
-author: "Dietrich Rordorf"
+authors: ["Dietrich Rordorf"]
 tags: []
 image: ""
 ---

@@ -9,7 +9,7 @@
     <h1>Seiten</h1>
     <div class="cards">
       <div class="cards-sizer"></div>
-      {{ range first 10 .Data.Pages }}
+      {{ range first 50 .Data.Pages }}
         {{ .Render "card"}}
       {{ end }}
     </div>

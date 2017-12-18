@@ -2,8 +2,8 @@
 title: "Digitalisierung der „Mitteilungen über das Rordorf-Geschlecht“"
 date:  2017-07-31T19:45:07+01:00
 draft: false
-author: "Dietrich Rordorf"
-tags: []
+authors: ["Dietrich Rordorf"]
+tags: ["mitteilungen", "rordorf"]
 image: "/images/uploads/rordorf-buch-thumb.jpg"
 ---
 Während der letzten Vorstandssitzung haben wir ein Exemplar der zweiten Auflage der „Mitteilungen über das Rordorf-Geschlecht“

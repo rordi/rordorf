@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de">
+{{ partial "head-single" . }}
+<body>
+<div class="container">
+    {{ partial "header" . }}
+    {{ partial "navbar" . }}
+    <article class="main">
+        {{ if eq .Title "Authors" }}
+            <h1>Autoren</h1>
+        {{ else if eq .Title "Tags" }}
+            <h1>Schlagwörter</h1>
+        {{ else if eq .Title "Categories" }}
+            <h1>Kategorien</h1>
+        {{ end }}
+        <div>
+            {{ range .Data.Pages }}
+                <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ end }}
+        </div>
+    </article>
+    {{ partial "footer" . }}
+</div>
+</body>
+{{partial "javascript" . }}
+</html>
