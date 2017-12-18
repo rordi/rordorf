@@ -1,4 +1,4 @@
-# Hugo-based site for [https://www.rordorf.org](rordorf.org)
+# Hugo-based site for [rordorf.org](https://www.rordorf.org)
 
 Originally based on Victor Hugo, the Hugo boilerplate for creating truly epic websites. I supercharged Victor Hugo with
 support for SCSS and improved CSS post-processing with autoprefixing and CSS minification.
