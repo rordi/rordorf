@@ -9,4 +9,3 @@
 /:year/:month:              /posts/                     301
 /:year                      /posts/                     301
 /category/:slug             /posts/                     301
-/tag/:slug                  /posts/                     301
