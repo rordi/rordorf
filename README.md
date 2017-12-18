@@ -1,18 +1,20 @@
-# Victor Hugo
+# Hugo-based site for [https://www.rordorf.org](rordorf.org)
 
-**A Hugo boilerplate for creating truly epic websites**
+Originally based on Victor Hugo, the Hugo boilerplate for creating truly epic websites. I supercharged Victor Hugo with
+support for SCSS and improved CSS post-processing with autoprefixing and CSS minification.
 
-This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Gulp](https://gulpjs.com/) + [Webpack](https://webpack.js.org/) as your asset pipeline.
 
-Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
+Victor Hugo is the boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Gulp](https://gulpjs.com/) +
+[Webpack](https://webpack.js.org/) as your asset pipeline.
 
-This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+Victor Hugo is setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
 
 ## Usage
 
 ### Prerequisites
 
-You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
+You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions
+installed in order to use Victor Hugo.
 
 Next step, clone this repository and run:
 
@@ -36,7 +38,8 @@ or
 gulp server
 ```
 
-Then visit http://localhost:3000/ *- or a new browser windows popped-up already -* to preview your new website. BrowserSync will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
+Then visit http://localhost:3000/ *- or a new browser windows popped-up already -* to preview your new website. BrowserSync
+will automatically reload the CSS or refresh the whole page, when stylesheet, javascript or content changes.
 
 ### Static build
 
@@ -51,8 +54,6 @@ To get a preview of posts or articles not yet published, run:
 ```bash
 npm run build-preview
 ```
-
-See [package.json](https://github.com/atomtigerzoo/victor-hugo/blob/readme-updates/package.json#L7) or the included gulp file for all tasks.
 
 ## Structure
 
@@ -89,29 +90,17 @@ The `src/js/app.js` file is the entrypoint for webpack and will be built to `/di
 
 You can use **ES6** and use both relative imports or import libraries from npm.
 
-Any CSS file directly under the `src/css/` folder will get compiled with [PostCSS Next](http://cssnext.io/)
-to `/dist/css/{filename}.css`. Import statements will be resolved as part of the build
+Any SCSS file directly under the `src/css/` folder will get compiled with SASS, be autoprefixed and minified to
+`/dist/css/{filename}.css`. Import statements will be resolved as part of the SASS build.
 
 ## Environment variables
 
-To seperate the development and production *- aka build -* stages, all gulp tasks run with a node environment variable named either `development` or `production`.
+To seperate the development and production *- aka build -* stages, all gulp tasks run with a node environment variable
+named either `development` or `production`.
 
-You can access the environment variable inside the theme files with `getenv "NODE_ENV"`. See the following example for a conditional statement:
+You can access the environment variable inside the theme files with `getenv "NODE_ENV"`. See the following example for
+a conditional statement:
 
     {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
 
 All tasks starting with *build* set the environment variable to `production` - the other will set it to `development`.
-
-## Deploying to Netlify
-
-- Push your clone to your own GitHub repository.
-- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
-
-Now Netlify will build and deploy your site whenever you push to git.
-
-You can also click this button:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
-
-
-## Enjoy!! 😸
