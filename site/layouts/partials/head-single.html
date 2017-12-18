@@ -10,6 +10,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:description" content="{{ .Summary }}" />
+  <meta property="og:url" content="{{ .Site.Params.appSitemapUrl }}{{ .Permalink }}" />
   {{ if .Params.image }}
     <link rel="image_src" href="{{ .Params.image }}" />
     <meta name="twitter:image" content="{{ .Params.image }}" />

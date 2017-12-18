@@ -1,5 +1,15 @@
 article {
 
+  .featuredimage {
+    min-width: 250px;
+    width: 30%;
+    max-width: 400px;
+    display: block;
+    float: right;
+    margin: 0.5em 0 1em 1em;
+    padding:2px;
+    border: 1px solid $lightgray;
+  }
 
   .gallery {
     display: block;
