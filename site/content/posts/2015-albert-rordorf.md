@@ -1,8 +1,10 @@
 ---
-title: "Gespräch mit Albert Rordorf – Auszug aus dem Monatsmagazin «reformiert.»"
-author: "Dietrich Rordorf"
-date: 2015-06-07T05:00:00+01:00
-draft: false
+title: Gespräch mit Albert Rordorf – Auszug aus dem Monatsmagazin «reformiert.»
+date: 2015-06-07T04:00:00.000Z
+author: Dietrich Rordorf
+tags:
+  - interview
+image: /images/uploads/albert-rordorf-300x192.png
 ---
 Heute war wieder unsere alljährliche Familienversammlung. Albert war munter mit dabei, und hat uns das folgende Interview
 mitbegracht.„Ein Gespräch mit Albert Rordorf“, Auszug aus dem Monatsmagazin «reformiert.» der Reformierten Kirchgemeinde
