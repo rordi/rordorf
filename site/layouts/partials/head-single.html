@@ -4,17 +4,18 @@
     {{ if .Title }}{{ .Title }} – {{ end }}{{ $.Site.Title }}
   </title>
   {{ partial "head-common" . }}
-  <link rel="image_src" href="images/rordorf-icon.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="images/rordorf-icon.jpg" />
   <meta name="twitter:title" content="{{ .Title }}" />
-  <meta name="twitter:description" content="{{ .Plain | truncate 140 "..." }}" />
+  <meta name="twitter:description" content="{{ .Summary }}" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ .Title }}" />
-  <meta property="og:description" content="{{ .Plain | truncate 200 "..." }}" />
+  <meta property="og:description" content="{{ .Summary }}" />
   {{ if .Params.image }}
+    <link rel="image_src" href="{{ .Params.image }}" />
+    <meta name="twitter:image" content="{{ .Params.image }}" />
     <meta property="og:image" content="{{ .Params.image }}" />
   {{ else }}
+    <link rel="image_src" href="images/rordorf-icon.jpg" />
     <meta property="og:image" content="images/rordorf-icon.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="262" />
