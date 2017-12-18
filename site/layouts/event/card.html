@@ -1,16 +1,18 @@
 <div class="card">
-    <a href="{{ .Permalink }}">
-        {{ if .Params.image }}
+    <div class="inner">
+        <a href="{{ .Permalink }}">
+            {{ if .Params.image }}
             <div class="featuredimage" style="background-image: url('{{ .Params.image }}') "></div>
-        {{ end }}
-        <article class="summary">
-            <h3>{{ .Title}}</h3>
-            <span class="type">Termin</span>
-            {{ if .Params.eventDate }}
+            {{ end }}
+            <article class="summary">
+                <h3>{{ .Title}}</h3>
+                <span class="type">Termin</span>
+                {{ if .Params.eventDate }}
                 <span class="date">
                     am {{ dateFormat "02.01.2006" .Params.eventDate }}{{ if .Params.eventTime }}, {{ .Params.eventTime }}h{{ end }}
                 </span>
-            {{ end }}
-        </article>
-    </a>
+                {{ end }}
+            </article>
+        </a>
+    </div>
 </div>

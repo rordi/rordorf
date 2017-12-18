@@ -8,6 +8,7 @@
   <div class="main">
     <h1>Blog-Beiträge</h1>
     <div class="cards">
+      <div class="cards-sizer"></div>
       {{ range first 10 .Data.Pages }}
         {{ .Render "card"}}
       {{ end }}

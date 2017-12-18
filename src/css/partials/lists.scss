@@ -11,85 +11,122 @@
 
   }
 
-  .card {
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    border: 1px solid $ultralightgray;
-    border-radius: 0.2em;
-    box-shadow: 0 0.2em 0.4em 0 rgba(0,0,0,0.05);
-    transition: $tr-scope $tr-speed $tr-mode;
-    padding: 0;
+  /* card sizing */
+  .cards-sizer, .card {
+    width: 25%; // 4 cols
 
-    /* preps for hover fill effect */
-    .summary {
-      transition: $tr-scope $tr-speed $tr-mode;
-      background-image: linear-gradient(lighten($ultralightgray, 3%), lighten($ultralightgray, 3%));
-      background-repeat: no-repeat;
-      background-position: 50% 100%;
-      background-size: 100% 0;
+    @include media("<=phone") {
+      width: 100%; // 1 col
     }
 
-    /* card sizing */
-    width: 320px;
+    @include media(">phone", "<desktop") {
+      width: 50%; // 2 cols
+    }
 
-    /* elevate and fill card on hover effect */
-    &:hover {
+    @include media(">tablet", "<mega") {
+      width: 33.333%; // 3 cols
+    }
+  }
+
+  .card {
+    float: left;
+    padding: 10px;
+
+    .inner {
+      border: 1px solid $ultralightgray;
+      border-radius: 0.2em;
+      box-shadow: 0 0.2em 0.4em 0 rgba(0,0,0,0.05);
       transition: $tr-scope $tr-speed $tr-mode;
-      box-shadow: 0.05em 0.2em 0.7em 0 rgba(0,0,0,0.25);
-      border-color: darken($ultralightgray, 3%);
 
+      /* preps for hover fill effect */
       .summary {
         transition: $tr-scope $tr-speed $tr-mode;
-        background-size: 100% 100%; // hover fill effect
+        background-image: linear-gradient(lighten($ultralightgray, 3%), lighten($ultralightgray, 3%));
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        background-size: 100% 0;
+      }
+
+      /* elevate and fill card on hover effect */
+      &:hover {
+        transition: $tr-scope $tr-speed $tr-mode;
+        box-shadow: 0.05em 0.2em 0.6em 0 rgba(0,0,0,0.25);
+        border-color: darken($ultralightgray, 7%);
+
+        .summary {
+          transition: $tr-scope $tr-speed $tr-mode;
+          background-size: 100% 100%; // hover fill effect
+        }
+
+        h3 {
+          color: $red;
+          transition: color $tr-speed $tr-mode;
+        }
+
+        .featuredimage {
+          transition: filter $tr-speed $tr-mode;
+          filter: grayscale(0) opacity(0.9);
+        }
+
+        .type, .date {
+          transition: filter $tr-speed $tr-mode;
+          filter: grayscale(0);
+        }
+
+      }
+
+      /* linking of the card */
+      &> a {
+        padding: 0;
+        display: block;
+        color: $darkgray;
+        text-decoration: none;
+        transition: $tr-scope $tr-speed $tr-mode;
+      }
+
+      article {
+        padding: 1em;
       }
 
       h3 {
-        color: $red;
+        font-size: 1.4em;
+        line-height: 130%;
+        margin: 0 0 0.4em 0;
         transition: color $tr-speed $tr-mode;
       }
 
       .featuredimage {
+        width: 100%;
+        overflow: hidden;
+        display: block;
+        padding: 0;
+        border-radius: 0.2em 0.2em 0 0;
+        background-color: $gray;
+        background-repeat: no-repeat;
+        background-size: cover;
         transition: filter $tr-speed $tr-mode;
-        filter: grayscale(0) opacity(0.9);
+        filter: grayscale(0.6) opacity(0.6);
+
+        height: 220px;
+
+        @include media("<=phone") {
+          height: 160px;
+        }
+
+        @include media(">phone", "<desktop") {
+          height: 180px;
+        }
+
+        @include media(">tablet", "<mega") {
+          height: 210px;
+        }
+
       }
 
+      .type, .date {
+        filter: grayscale(0.75);
+      }
     }
-
-    /* linking of the card */
-    &> a {
-      padding: 0;
-      display: block;
-      color: $darkgray;
-      text-decoration: none;
-      transition: $tr-scope $tr-speed $tr-mode;
-    }
-
-    article {
-      padding: 1em;
-    }
-
-    h3 {
-      font-size: 1.3em;
-      line-height: 125%;
-      margin: 0 0 0.4em 0;
-      transition: color $tr-speed $tr-mode;
-    }
-
-    .featuredimage {
-      width: 320px !important;
-      height: 190px;
-      overflow: hidden;
-      display: block;
-      padding: 0;
-      border-radius: 0.2em 0.2em 0 0;
-      background-color: $gray;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transition: filter $tr-speed $tr-mode;
-      filter: grayscale(0.6) opacity(0.6);
-    }
-
   }
 
 }

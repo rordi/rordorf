@@ -10,7 +10,8 @@ Hier einige Impressionen vom Klosterrundgang und dem Kreuzgang des Klosters Wett
 
 <!--more-->
 
-<div class="gallery width-400">
+<div class="gallery">
+    <div class="images-sizer"></div>
     <div class="image">
         <img alt="Ausflug Wettingen" src="/images/uploads/wettingen/01.jpg">
     </div>
