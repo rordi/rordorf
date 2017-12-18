@@ -3,6 +3,9 @@
         <a href="{{ .Permalink }}">
             <article class="summary">
                 <h3>{{ .Title}}</h3>
+                <p>
+                    {{ .Plain | truncate 200 "..." }}
+                </p>
                 <span class="type">Seite</span>
             </article>
         </a>

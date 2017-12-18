@@ -1,0 +1,25 @@
+<head>
+  <meta charset="utf-8">
+  <title>
+    {{ if .Title }}{{ .Title }} – {{ end }}{{ $.Site.Title }}
+  </title>
+  {{ partial "head-common" . }}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta name="twitter:description" content="{{ .Summary }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ .Summary }}" />
+  <meta property="og:url" content="{{ .Site.Params.appSitemapUrl }}{{ .Permalink }}" />
+  {{ if .Params.image }}
+    <link rel="image_src" href="{{ .Params.image }}" />
+    <meta name="twitter:image" content="{{ .Params.image }}" />
+    <meta property="og:image" content="{{ .Params.image }}" />
+  {{ else }}
+    <link rel="image_src" href="images/rordorf-icon.jpg" />
+    <meta property="og:image" content="images/rordorf-icon.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="262" />
+    <meta property="og:image:height" content="262" />
+  {{ end }}
+</head>

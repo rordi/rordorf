@@ -4,7 +4,7 @@ date:  2016-06-12T18:34:02+01:00
 draft: false
 author: "Dietrich Rordorf"
 tags: []
-image: ""
+image: "/images/uploads/wettingen.jpg"
 ---
 Hier einige Impressionen vom Klosterrundgang und dem Kreuzgang des Klosters Wettingen anschliesslich der diesjährigen Versammlung vom 5. Juni 2016.
 

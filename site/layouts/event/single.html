@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="de">
-{{partial "head" . }}
+{{ partial "head-single" . }}
 <body>
 <div class="container">
     {{ partial "header" . }}
@@ -24,6 +24,18 @@
         <div>
             {{ .Content }}
         </div>
+
+        {{ if .Params.location }}
+        <div class="map">
+            <h2>Treffpunkt</h2>
+            <iframe
+                    width="100%"
+                    height="450"
+                    frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA6fOVkyCWjCB2VlocYjmB5MgowAuewKxk&q={{ .Params.location }}">
+            </iframe>
+        </div>
+        {{ end }}
 
         <div class="postnav">
             <span>

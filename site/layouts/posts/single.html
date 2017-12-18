@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="de">
-{{partial "head" . }}
+{{ partial "head-single" . }}
 <body>
 <div class="container">
     {{ partial "header" . }}
     {{ partial "navbar" . }}
     <article class="main">
-
         <h1>{{ .Title }}</h1>
 
         <div class="postpre">
@@ -20,6 +19,10 @@
                 {{ .WordCount }} Wörter ({{ .ReadingTime }} Minuten)
             </span>
         </div>
+
+        {{ if .Params.image }}
+        <img src="{{ .Params.image }}" alt="Beitragsbild" class="featuredimage" />
+        {{ end }}
 
         <div>
             {{ .Content }}

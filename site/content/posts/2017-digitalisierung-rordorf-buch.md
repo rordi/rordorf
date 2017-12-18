@@ -12,10 +12,6 @@ Ausland.
 
 <!--more-->
 
-<p>
-    <img src="/images/uploads/rordorf-buch-cover.jpg" class="bookcover">
-</p>
-
 Angekommen ist es bei einem spezialisierten Dienstleister in Berlin. Dort wurde der Buchrücken abgesägt, und in der Folge
 die losen Blätter automatisiert in hoher Qualität eingescannt (ein sogenannter destruktiver Scan). Als Resultat können wir
 unsere Familien-Bibel nun endlich auch als PDF am Bildschirm oder auf dem Tablet lesen.
