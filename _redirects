@@ -1,0 +1,12 @@
+# original uri              redirect to uri             http response code
+#-------------------------------------------------------------------------
+/familie                    /about-family/              301
+/calendar                   /event/                     301
+/category/termine/          /event/                     301
+/tag/versammlung/           /event/                     301
+/:year/:month:/:date/:slug  /:year/:month/:slug         301
+/:year/:month:/:date        /posts/                     301
+/:year/:month:              /posts/                     301
+/:year                      /posts/                     301
+/category/:slug             /posts/                     301
+/tag/:slug                  /posts/                     301
