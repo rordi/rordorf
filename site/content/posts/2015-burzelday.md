@@ -1,8 +1,10 @@
 ---
-title: "Auch schon mal einen Geburtstag vergessen?"
-author: "Dietrich Rordorf"
-date: 2015-12-24T05:00:00+01:00
-draft: false
+title: Auch schon mal einen Geburtstag vergessen?
+date: 2015-12-24T04:00:00.000Z
+author: Dietrich Rordorf
+tags:
+  - burzelday
+image: /images/uploads/bg11-e1450948357703-300x187.jpg
 ---
 Es ist uns allen schon ein mal passiert: wir haben einen Geburtstag vergessen.
 
