@@ -1,8 +1,10 @@
 ---
-title: "Die neue Seite vom Rordorfschen Familienfonds"
-author: "Dietrich Rordorf"
-date: 2014-09-01T05:00:00+01:00
-draft: false
+title: Die neue Seite vom Rordorfschen Familienfonds
+date: 2014-09-01T04:00:00.000Z
+author: Dietrich Rordorf
+tags:
+  - website
+image: /images/uploads/rordorf-website-mockdrop-768x510.jpg
 ---
 Wir haben für die Familienstiftung diese neue Website kreiert.
 
