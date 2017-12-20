@@ -49,6 +49,7 @@
     "cssnano": "^3.10.0",
     "gulp-postcss": "^7.0.0",
     "imagesloaded": "^4.1.3",
+    "magic-snowflakes": "^2.2.0",
     "masonry-layout": "^4.2.0",
     "precss": "^2.0.0"
   }

@@ -1,5 +1,6 @@
 let Masonry = require('masonry-layout'),
     imagesLoaded = require('imagesloaded'), // required by Masonry for image galleries
+    SnowFlakes = require('magic-snowflakes'),
     menu = document.getElementById('collapsible'),
     toggler = document.getElementById('toggler'),
     togglericon = document.getElementById('togglericon')
@@ -40,18 +41,32 @@ if (gallery) {
 /**
  * menu toggle on small screens
  */
+if (toggler) {
     // toggle the navigation UI
-let toggleNavigation = function() {
-    if(menu.classList.contains('expanded')) {
-        // close nav
-        menu.classList.remove('expanded');
-        togglericon.classList.remove('expanded');
-    } else {
-        // open nav
-        menu.classList.add('expanded');
-        togglericon.classList.add('expanded');
-    }
-};
-toggler.addEventListener('click', function() {
-    toggleNavigation();
+    let toggleNavigation = function() {
+        if(menu.classList.contains('expanded')) {
+            // close nav
+            menu.classList.remove('expanded');
+            togglericon.classList.remove('expanded');
+        } else {
+            // open nav
+            menu.classList.add('expanded');
+            togglericon.classList.add('expanded');
+        }
+    };
+    toggler.addEventListener('click', function() {
+        toggleNavigation();
+    });
+}
+
+/**
+ * init Snowflakes
+ */
+
+SnowFlakes({
+    container: document.body,
+    count: 80,
+    speed: 0.8,
+    useRotate: true,
+    useScale: true
 });

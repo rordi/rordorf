@@ -1,0 +1,98 @@
+---
+title: Wintergruss 2017
+draft: false
+---
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+
+    body {
+        background: #000000 !important;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .hero {
+        width: 100vw !important;
+        min-height: 100vh !important;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .hero::before {
+        background-image: url("images/zh.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        font-size: 4em;
+        line-height: 100%;
+        font-weight: normal;
+        color: white;
+        margin: 20vh auto 0.5em auto;
+        font-family: 'Berkshire Swash', cursive;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        line-height: 100%;
+        font-weight: normal;
+        color: white;
+        margin: 1em auto 1em auto;
+        font-family: 'Berkshire Swash', cursive;
+    }
+
+    h3 {
+        font-size: 2.5em;
+        line-height: 110%;
+        font-weight: bold;
+        font-style: oblique;
+        color: white;
+        margin: 1em auto 1em auto;
+        font-family: 'Berkshire Swash', cursive;
+    }
+
+    .spacer {
+        margin-bottom: 45vh;
+    }
+
+    .scroll {
+        position: absolute;
+        bottom: 5vh;
+    }
+
+    .video-foreground,
+    .video-background iframe {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* small screen adjustments */
+    @media screen and (max-width: 600px) {
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+    }
+</style>
+
+<div class="hero">
+    <h1>Frohe Festtage</h1>
+    <h2>wünschen Euch</h2>
+    <h3>Adriana, Dietrich & Noëlle Rordorf</h3>
+    <p>
+        <img class="scroll" src="images/scroll.gif" alt="scroll down" width="48" height="auto"/>
+    </p>
+    <div class="spacer"></div>
+</div>
+
+<div class="video-background">
+    <div class="video-foreground">
+        <iframe src="https://www.youtube.com/embed/TVr-w5pSXgc?rel=0&controls=0&showinfo=0&&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
