@@ -60,13 +60,14 @@ if (toggler) {
 }
 
 /**
- * init Snowflakes
+ * add snowflakes
  */
-
-SnowFlakes({
-    container: document.body,
-    count: 80,
-    speed: 0.8,
-    useRotate: true,
-    useScale: true
-});
+if (window.snowflakes) {
+    SnowFlakes({
+        container: document.body,
+        count: 80,
+        speed: 0.8,
+        useRotate: true,
+        useScale: true
+    });
+}
