@@ -1,5 +1,5 @@
 ---
-title: Digitalisierung der „Mitteilungen über das Rordorf-Geschlecht“
+title: Digitalisierung der „Mitteilungen über das Rordorf-Geschlecht“ test
 date: 2017-07-31T18:45:07.000Z
 authors:
   - Dietrich Rordorf
