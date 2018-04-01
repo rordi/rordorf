@@ -28,7 +28,7 @@ E-mail: <a href="mailto:drordorf@gmail.com">drordorf@gmail.com</a>
 
 # Kontakt
 
-Rordorfscher Familienfonds<br>\
+Rordorfscher Familienfonds<br>
 c/o Dr. Berchtold Rordorf<br>
 Feldpark 20<br>
 CH-6300 Zug<br>

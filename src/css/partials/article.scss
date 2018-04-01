@@ -66,6 +66,7 @@ article {
     white-space: nowrap !important;
     color: $white;
     border-radius: 0.2em;
+    border: 0 none;
     padding: 0.1em 0.5em;
     margin: 0 0.5em 0.5em 0;
     text-decoration: none;
@@ -73,6 +74,10 @@ article {
 
   .author {
     background: $gray;
+
+    &:hover {
+      background: lighten($gray, 10%);
+    }
   }
 
   .date {
@@ -89,6 +94,11 @@ article {
 
   .tag {
     background: desaturate($red, 40%);
+
+
+    &:hover {
+      background: lighten($red, 10%);
+    }
   }
 
   .category {
