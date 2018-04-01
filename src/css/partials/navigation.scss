@@ -7,12 +7,12 @@
 #collapsible {
   @include media("<=phone") {
     max-height: 0;
-    transition: max-height $tr-speed $tr-mode;
     overflow: hidden;
+    transition: $tr-scope $tr-speed $tr-mode;
 
     &.expanded {
       max-height: 500px;
-      transition: max-height $tr-speed $tr-mode;
+      transition: max-height 2*$tr-speed $tr-mode;
     }
   }
 }
@@ -23,6 +23,21 @@
   height: auto;
   clear: right;
   display: block;
+  text-transform: uppercase;
+  font-size: 85%;
+  text-rendering: geometricPrecision;
+  letter-spacing: 0.4pt;
+
+  @include media("<=phone") {
+    font-size: 95%;
+    margin-bottom: 2em;
+    width: 100%;
+    text-align: center;
+  }
+
+  @include media(">desktop") {
+    margin-left: 170px;
+  }
 
   li {
     display: inline-block;
@@ -31,10 +46,12 @@
 
     @include media("<=phone") {
       display: block;
+      width: 100%;
     }
   }
 
-  a {
+  a,
+  a:visited {
     display: inline-block;
     padding: 0.4em 1em;
     margin: 0;
@@ -42,6 +59,7 @@
     color: $white;
     background-color: $red;
     transition: $tr-scope $tr-speed $tr-mode;
+    border: 0 none;
 
     &:hover {
       color: $white;
@@ -51,6 +69,13 @@
 
     &.active {
       background-color: $darkgray;
+    }
+
+    @include media("<=phone") {
+      display: block;
+      width: 100%;
+      padding: 0.6em 0;
+      margin: 0.6em 0;
     }
   }
 }

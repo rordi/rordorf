@@ -13,7 +13,7 @@
 
   /* card sizing */
   .cards-sizer, .card {
-    width: 25%; // 4 cols
+    width: 33.333%; // 3 cols
 
     @include media("<=phone") {
       width: 100%; // 1 col
@@ -23,7 +23,7 @@
       width: 50%; // 2 cols
     }
 
-    @include media(">tablet", "<mega") {
+    @include media(">=desktop") {
       width: 33.333%; // 3 cols
     }
   }
@@ -37,6 +37,14 @@
       border-radius: 0.2em;
       box-shadow: 0 0.2em 0.4em 0 rgba(0,0,0,0.05);
       transition: $tr-scope $tr-speed $tr-mode;
+
+      font-size: 90%;
+      line-height: 135%;
+
+      p {
+        margin: 0 0 0.4em 0;
+      }
+
 
       /* preps for hover fill effect */
       .summary {
@@ -76,9 +84,11 @@
       }
 
       /* linking of the card */
-      &> a {
+      &> a,
+      &> a:visited {
         padding: 0;
         display: block;
+        border: 0 none;
         color: $darkgray;
         text-decoration: none;
         transition: $tr-scope $tr-speed $tr-mode;
@@ -89,8 +99,6 @@
       }
 
       h3 {
-        font-size: 1.4em;
-        line-height: 130%;
         margin: 0 0 0.4em 0;
         transition: color $tr-speed $tr-mode;
       }
@@ -124,7 +132,8 @@
       }
 
       .type, .date {
-        filter: grayscale(0.75);
+        filter: grayscale(0.8);
+        font-size: 1rem;
       }
     }
   }

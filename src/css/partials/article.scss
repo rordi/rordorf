@@ -1,7 +1,7 @@
 article {
 
   .featuredimage {
-    min-width: 250px;
+    min-width: 200px;
     width: 30%;
     max-width: 400px;
     display: block;
@@ -9,6 +9,12 @@ article {
     margin: 0.5em 0 1em 1em;
     padding:2px;
     border: 1px solid $lightgray;
+
+    @include media("<=phone") {
+      width: 100%;
+      float: none;
+      margin: 1em 0;
+    }
   }
 
   .gallery {

@@ -1,13 +1,13 @@
 /* main styling */
 
 body {
-  font-family: Assistant, 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: 1.3em;
-  line-height: 1.67;
+  font-family: Palanquin, 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 145%;
   background: #E2D9CA url('/images/bg.png') repeat;
 
   @include media("<=phone") {
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.5;
   }
 
@@ -16,6 +16,7 @@ body {
 .container {
 
   width: 90%;
+  max-width: 60em;
 
   height: auto;
   min-height: 90vh;
@@ -47,8 +48,19 @@ body {
 
 /* hyperlinks */
 
-a:hover {
-  transition: $tr-scope, $tr-speed, $tr-mode;
+
+a,
+a:visited {
+  color: $blue;
+  text-decoration: none;
+  border-bottom: 2px solid $white;
+  transition: $tr-scope $tr-speed $tr-mode;
+
+  &:hover,
+  &:focus {
+    transition: $tr-scope $tr-speed $tr-mode;
+    border-bottom-color: $blue;
+  }
 }
 
 /* clears */

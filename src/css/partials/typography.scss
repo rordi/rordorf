@@ -1,19 +1,29 @@
 h1 {
-  font-size: 2em;
-  font-family: Eczar, Garamond, "Times New Roman", serif;
+  font-size: 2rem;
+  line-height: 145%;
+  font-family: Martel, Garamond, "Times New Roman", serif;
   color: $darkgray;
+  margin: 2rem 0 1rem 0;
+}
+
+article h1:first-of-type {
+  margin-top: 0;
 }
 
 h2 {
-  font-size: 1.2em;
-  font-family: Eczar, Garamond, "Times New Roman", serif;
+  font-size: 1.7rem;
+  line-height: 145%;
+  font-family: Martel, Garamond, "Times New Roman", serif;
   color: $darkgray;
+  margin: 2rem 0 1rem 0;
 }
 
 h3 {
-  font-size: 1em;
-  font-family: Eczar, Garamond, "Times New Roman", serif;
+  font-size: 1.4rem;
+  line-height: 145%;
+  font-family: Martel, Garamond, "Times New Roman", serif;
   color: $darkgray;
+  margin: 2rem 0 1rem 0;
 }
 
 .hide {
