@@ -4,9 +4,6 @@ backend:
   branch: master # Branch to update (master by default)
 
 display_url: https://www.rordorf.org
-
-# publish_mode: editorial_workflow    # uncomment to use the editorial workflow (draft on own branch that can be previewed through github)
-
 media_folder: "site/static/images/uploads" # Folder where user uploaded files should go
 public_folder: "/images/uploads"
 
