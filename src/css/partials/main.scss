@@ -76,3 +76,18 @@ a:visited {
 .clear-right {
   clear: right;
 }
+
+/* documents */
+
+.documents {
+
+  span {
+    display: block;
+    margin: 1em 0;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+}
