@@ -2,7 +2,9 @@
     <div class="inner">
         <a href="{{ .Permalink }}">
             {{ if .Params.image }}
-            <div class="featuredimage" style="background-image: url('{{ .Params.image }}') "></div>
+            <div class="imagebox">
+                <div class="featuredimage" style="background-image: url('{{ .Params.image }}') "></div>
+            </div>
             {{ end }}
             <article class="summary">
                 <h3>{{ .Title}}</h3>
