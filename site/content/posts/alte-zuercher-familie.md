@@ -8,6 +8,8 @@ tags:
   - rordorf
 image: /images/uploads/Rordorf-1349-Urkunde-thumb.png
 ---
+<!--more-->
+
 Gleichzetige Abschrift einer Urkunde vom 6. März 1349, wonach Bürgermeister Brun und fünf Zürcher Kaufleute und Bürger - 
 darunter Hartmann Rordorf - zwei Kaufleute bevollmächtigen, die Rückerstattung der in Mailand beschlagnahmten Seide und
 anderer Güter zu erwirken. (Vgl. Zürcher Stadtbücher I, S. 158, und Übersetzung in A. Bürkli, Geschichte der zürcherischen
