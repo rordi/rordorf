@@ -2,14 +2,14 @@
 baseurl = "/"
 languageCode = "de-ch"
 languageLang = "de"
-title = "Rordorf Fonds | Rordorfscher Familienfonds | gegründet in Zürich 1710"
+title = "Familie Rordorf Zürich | Rordorfscher Familienfonds - gegründet in Zürich 1710"
 
 # Parameter Management
 [params]
     appColor = "#A6200D"
-    appTitle = "Rordorfscher Familienfonds | gegründet in Zürich 1710"
+    appTitle = "Familie Rordorf Zürich | Rordorfscher Familienfonds - gegründet in Zürich 1710"
     appDescription = "Der Rordorfsche Familienfonds wurde 1710 durch das Legat der Schwestern Margaretha und Elisabetha Rordorf in Zürich gegründet. Zweck der Stiftung ist die Überlassung des Ertrages aus dem Stiftungsvermögen, um das wirtschaftliche und berufliche Fortkommen der Familienmitglieder zu erleichtern, insbesondere durch Stipendien."
-    appKeywords = "Rordorf, Rordorf Fonds, Rordorf Stiftung, Rordorfscher Familienfonds"
+    appKeywords = "Rordorf, Familie Rordorf, Rordorf Zürich, Rordorf Fonds, Rordorf Stiftung, Rordorfscher Familienfonds, Rordorfer Fonds, Rordorfer Stiftung, 1349, 1710, Zürich, alte Zürcher Familie"
     appSitemapUrl = "https://www.rordorf.org"
     appPublisher = "Rordorfscher Familienfonds"
 
