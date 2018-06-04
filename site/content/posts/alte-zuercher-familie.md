@@ -1,5 +1,6 @@
 ---
 title: Erste Erwähnung der Rordorf als Bürger von Zürich 1349
+url: /2018/06/rordorf-buerger-von-zuerich-1349
 date: 2018-06-04T18:45:07.000Z
 authors:
   - Dietrich Rordorf
