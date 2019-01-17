@@ -11,6 +11,52 @@ let Masonry = require('masonry-layout'),
     togglericon = document.getElementById('togglericon')
 ;
 
+window.onload = function() {
+    cardsLayout();
+    imageGalleryLayout();
+};
+
+window.onresize = function() {
+    cardsLayout();
+    imageGalleryLayout();
+};
+
+/**
+ * callback to init masonry layout for cards
+ */
+function cardsLayout() {
+    let grid = document.querySelector('.cards');
+    if (grid) {
+        new Masonry(grid, {
+            columnWidth: '.cards-sizer',
+            itemSelector: '.card',
+            percentPosition: true
+        });
+    }
+}
+
+/**
+ * initialize masonry layout for img galleries
+ */
+function imageGalleryLayout() {
+    let gallery = document.querySelector('.gallery');
+    if (gallery) {
+        let images = new Masonry(gallery, {
+            columnWidth: '.images-sizer',
+            itemSelector: '.image',
+            percentPosition: true
+        });
+
+        // adjust layout after each img is loaded
+        let loadedImages = document.querySelectorAll('.image');
+        for (let i = 0; i < loadedImages.length; i++) {
+            imagesLoaded(loadedImages[i], function() {
+                images.layout();
+            });
+        }
+    }
+}
+
 /**
  * crypto functions for doc downloads
  */
@@ -69,39 +115,6 @@ if (docform) {
     });
 }
 
-
-
-/**
- * initialize masonry layout for cards
- */
-let grid = document.querySelector('.cards');
-if (grid) {
-    new Masonry(grid, {
-        columnWidth: '.cards-sizer',
-        itemSelector: '.card',
-        percentPosition: true
-    });
-}
-
-/**
- * initialize masonry layout for img galleries
- */
-let gallery = document.querySelector('.gallery');
-if (gallery) {
-    let images = new Masonry(gallery, {
-        columnWidth: '.images-sizer',
-        itemSelector: '.image',
-        percentPosition: true
-    });
-
-    // adjust layout after each img is loaded
-    let loadedImages = document.querySelectorAll('.image');
-    for (let i = 0; i < loadedImages.length; i++) {
-        imagesLoaded(loadedImages[i], function() {
-            images.layout();
-        });
-    }
-}
 
 /**
  * menu toggle on small screens
