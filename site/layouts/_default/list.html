@@ -9,6 +9,9 @@
     {{ if eq .Kind "taxonomy" }}
       <h2>Beiträge: {{ .Title }}</h2>
     {{ end }}
+    <article>
+      {{ .Content }}
+    </article>
     <div class="cards">
       <div class="cards-sizer"></div>
       {{ range first 50 .Data.Pages }}

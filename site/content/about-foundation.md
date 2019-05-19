@@ -18,13 +18,17 @@ E-Mail: <a href="mailto:cmrordorf@gmail.com">cmrordorf@gmail.com</a>
 David Rordorf<br>
 E-Mail: <a href="mailto:david.rordorf@gmail.com">david.rordorf@gmail.com</a>
 
-**Aktuarin**<br>
+**Aktuarin (abtretend per GV 2019 bzw. vakant)**<br>
 Manon Rordorf<br>
 E-Mail: <a href="mailto:manon.rordorf@asc-ag.com">manon.rordorf@asc-ag.com</a>
 
-**Quästor**<br>
+**Quästor I**<br>
 Dietrich Rordorf<br>
 E-mail: <a href="mailto:drordorf@gmail.com">drordorf@gmail.com</a>
+
+**Quästor II (seit GV 2019)**<br>
+Thomas Rordorf<br>
+E-mail: <a href="mailto:thomas.rordorf@ggaweb.ch">thomas.rordorf@ggaweb.ch</a>
 
 # Kontakt
 
