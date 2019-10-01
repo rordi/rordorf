@@ -11,26 +11,23 @@ Zweck dieser Stiftung ist die Überlassung des Ertrages aus dem Stiftungsvermög
 Besetzung des Vorstands für die Amtszeit 2017-2021.
 
 **Päsidentin**<br>
-Claudia Rordorf<br>
-E-Mail: <a href="mailto:cmrordorf@gmail.com">cmrordorf@gmail.com</a>
+Claudia Rordorf
 
 **Vizepräsident und Archivar**<br>
-David Rordorf<br>
-E-Mail: <a href="mailto:david.rordorf@gmail.com">david.rordorf@gmail.com</a>
+David Rordorf
 
-**Aktuarin (abtretend per GV 2019 bzw. vakant)**<br>
-Manon Rordorf<br>
-E-Mail: <a href="mailto:manon.rordorf@asc-ag.com">manon.rordorf@asc-ag.com</a>
+**Aktuar**<br>
+<em>vakant</em>
 
 **Quästor I**<br>
-Dietrich Rordorf<br>
-E-mail: <a href="mailto:drordorf@gmail.com">drordorf@gmail.com</a>
+Dietrich Rordorf
 
 **Quästor II (seit GV 2019)**<br>
-Thomas Rordorf<br>
-E-mail: <a href="mailto:thomas.rordorf@ggaweb.ch">thomas.rordorf@ggaweb.ch</a>
+Thomas Rordorf
 
-# Kontakt
+<a href="/contact/" class="button">Vorstand kontaktieren</a>
+
+# Postanschrift
 
 Rordorfscher Familienfonds<br>
 c/o Dr. Berchtold Rordorf<br>
