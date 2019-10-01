@@ -24,7 +24,7 @@ body {
   margin: 2em auto;
   padding: 0;
 
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 4px rgba(black, 0.15), 0 15px 15px rgba(black, 0.1);
   background: $white;
 
   @include media("<=phone") {
