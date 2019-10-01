@@ -8,8 +8,13 @@ draft: false
 </p>
 <p>
     <form id="docform">
-        <input name="docpw" id="docpw" type="text">
+        <input name="docpw" id="docpw" type="text" required>
         <button type="submit">Weiter</button>
     </form>
 </p>
 <div class="documents" id="docwrap"></div>
+
+<p>
+    Bei Fragen bitte den Vorstand kontaktieren:
+    <a href="/contact/" class="button">Vorstand kontaktieren</a>
+</p>
