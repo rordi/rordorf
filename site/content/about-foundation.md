@@ -17,13 +17,13 @@ Claudia Rordorf
 David Rordorf
 
 **Aktuar**<br>
-<em>vakant</em>
+Jacques Rordorf (seit GV 2020)
 
 **Quästor I**<br>
 Dietrich Rordorf
 
-**Quästor II (seit GV 2019)**<br>
-Thomas Rordorf
+**Quästor II**<br>
+Thomas Rordorf (seit GV 2019)
 
 <a href="/contact/" class="button">Vorstand kontaktieren</a>
 
