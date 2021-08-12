@@ -8,7 +8,7 @@ Zweck dieser Stiftung ist die Überlassung des Ertrages aus dem Stiftungsvermög
 
 # Vorstand
 
-Besetzung des Vorstands für die Amtszeit 2017-2021.
+Besetzung des Vorstands für die Amtszeit 2017-2021. An der GV 2021 wurde der Vorstand ausserordentlich um ein weiteres Jahr bestätigt und die Neuwahlen Pandemie-bedingt auf die GV 2022 verschoben.
 
 **Päsidentin**<br>
 Claudia Rordorf
