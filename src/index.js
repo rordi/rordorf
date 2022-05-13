@@ -1,8 +1,8 @@
+import "./css/main.scss";
 import axios from "axios";
 
 let Masonry = require('masonry-layout'),
     imagesLoaded = require('imagesloaded'), // required by Masonry for image galleries
-    SnowFlakes = require('magic-snowflakes'),
     AES = require("crypto-js/aes"),
     SHA256 = require("crypto-js/sha256"),
     ENCUTF8 = require("crypto-js/enc-utf8"),
@@ -11,20 +11,11 @@ let Masonry = require('masonry-layout'),
     togglericon = document.getElementById('togglericon')
 ;
 
-window.onload = function() {
-    cardsLayout();
-    imageGalleryLayout();
-};
-
-window.onresize = function() {
-    cardsLayout();
-    imageGalleryLayout();
-};
-
 /**
  * callback to init masonry layout for cards
  */
-function cardsLayout() {
+global.cardsLayout = function() {
+    console.log('running cardsLayout...')
     let grid = document.querySelector('.cards');
     if (grid) {
         new Masonry(grid, {
@@ -38,7 +29,8 @@ function cardsLayout() {
 /**
  * initialize masonry layout for img galleries
  */
-function imageGalleryLayout() {
+global.imageGalleryLayout = function() {
+    console.log('running imageGalleryLayout...')
     let gallery = document.querySelector('.gallery');
     if (gallery) {
         let images = new Masonry(gallery, {
@@ -56,6 +48,17 @@ function imageGalleryLayout() {
         }
     }
 }
+
+window.addEventListener('load', () => {
+    console.log('loaded event...');
+    cardsLayout();
+    imageGalleryLayout();
+})
+
+window.onresize = function() {
+    cardsLayout();
+    imageGalleryLayout();
+};
 
 /**
  * crypto functions for doc downloads
@@ -134,18 +137,5 @@ if (toggler) {
     };
     toggler.addEventListener('click', function() {
         toggleNavigation();
-    });
-}
-
-/**
- * add snowflakes
- */
-if (window.snowflakes) {
-    SnowFlakes({
-        container: document.body,
-        count: 80,
-        speed: 0.8,
-        useRotate: true,
-        useScale: true
     });
 }

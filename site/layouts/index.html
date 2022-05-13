@@ -6,10 +6,15 @@
         {{ partial "header" . }}
         {{ partial "navbar" . }}
         <div class="main">
-            <div class="cards">
+            {{ .Content }}
+            <div class="cardslll">
                 <div class="cards-sizer"></div>
-                {{ range first 50 .Data.Pages }}
-                    {{ .Render "card"}}
+                {{ range .Site.Pages.GroupByDate "2006" }}
+                    {{ range .Pages }}
+                        {{ if eq .Kind "page" }}
+                            {{ .Render "card" }}
+                        {{ end }}
+                    {{ end }}
                 {{ end }}
             </div>
             <div class="clear-left"></div>

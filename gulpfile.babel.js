@@ -97,7 +97,7 @@ function buildSite(cb, options, environment = "development") {
             cb();
         } else {
             browserSync.notify("Hugo build failed :(");
-            cb("Hugo build failed");
+            cb("Hugo build failed :(");
         }
     });
 }

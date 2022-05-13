@@ -14,8 +14,10 @@
     </article>
     <div class="cards">
       <div class="cards-sizer"></div>
-      {{ range first 50 .Data.Pages }}
-        {{ .Render "card"}}
+      {{ range .Site.Pages.GroupByDate "2006" }}
+        {{ range .Pages }}
+          {{ .Render "card" }}
+        {{ end }}
       {{ end }}
     </div>
   </div>

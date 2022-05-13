@@ -10,27 +10,34 @@ Zweck dieser Stiftung ist die Überlassung des Ertrages aus dem Stiftungsvermög
 
 Besetzung des Vorstands für die Amtszeit 2017-2021. An der GV 2021 wurde der Vorstand ausserordentlich um ein weiteres Jahr bestätigt und die Neuwahlen Pandemie-bedingt auf die GV 2022 verschoben.
 
-**Päsidentin**<br>
+**Päsidentin**
+{{< rawhtml >}}<br>{{< /rawhtml >}}
 Claudia Rordorf
 
-**Vizepräsident und Archivar**<br>
+**Vizepräsident und Archivar**
+{{< rawhtml >}}<br>{{< /rawhtml >}}
 David Rordorf
 
-**Aktuar**<br>
+**Aktuar**
+{{< rawhtml >}}<br>{{< /rawhtml >}}
 Jacques Rordorf (seit GV 2020)
 
-**Quästor I**<br>
+**Quästor I**
+{{< rawhtml >}}<br>{{< /rawhtml >}}
 Dietrich Rordorf
 
-**Quästor II**<br>
+**Quästor II**
+{{< rawhtml >}}<br>{{< /rawhtml >}}
 Thomas Rordorf (seit GV 2019)
 
-<a href="/contact/" class="button">Vorstand kontaktieren</a>
+{{< rawhtml >}}
+    <a href="/contact/" class="button">Vorstand kontaktieren</a>
+{{< /rawhtml >}}
 
 # Postanschrift
 
-Rordorfscher Familienfonds<br>
-c/o Dr. Berchtold Rordorf<br>
-Feldpark 20<br>
-CH-6300 Zug<br>
+Rordorfscher Familienfonds{{< rawhtml >}}<br>{{< /rawhtml >}}
+c/o Dr. Berchtold Rordorf{{< rawhtml >}}<br>{{< /rawhtml >}}
+Feldpark 20{{< rawhtml >}}<br>{{< /rawhtml >}}
+CH-6300 Zug{{< rawhtml >}}<br>{{< /rawhtml >}}
 Switzerland

@@ -19,10 +19,11 @@ Seidenindustrie, S.51-52).
 Die Abbildung hier stammt von einer Urkunde, welche zum Andenken an das 600-jährige Jubiläum des Zürcher Bürgerrechts
 anno 1949 an die Mitglieder der Familie Rordorf verteilt wurde. 
 
-<p>
-    <a href="/images/uploads/Rordorf-1349-Urkunde.pdf">Download PDF, 10 MB</a>
-</p>
-
-<p>
-    <img width="100%" height="auto" src="/images/uploads/Rordorf-1349-Urkunde.png">
-</p>
+{{< rawhtml >}}
+    <p>
+        <a href="/images/uploads/Rordorf-1349-Urkunde.pdf">Download PDF, 10 MB</a>
+    </p>
+    <p>
+        <img width="100%" height="auto" src="/images/uploads/Rordorf-1349-Urkunde.png">
+    </p>
+{{< /rawhtml >}}
