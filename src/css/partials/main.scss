@@ -78,16 +78,15 @@ a:visited {
 }
 
 /* documents */
-
 .documents {
-
   span {
-    display: block;
-    margin: 1em 0;
+    display: list-item;
+    margin-left: 3em;
+    font-size: 0.8em;
+    line-height: 1.4em;
   }
 
   a {
     display: inline-block;
   }
-
 }

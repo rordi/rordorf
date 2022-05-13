@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="de">
+{{ partial "head-site" . }}
+<body>
+    <div class="container">
+        {{ partial "header" . }}
+        {{ partial "navbar" . }}
+        <div class="main">
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
+        </div>
+        {{ partial "footer" . }}
+    </div>
+</body>
+{{ partial "schema/global" . }}
+{{ partial "javascript" . }}
+</html>

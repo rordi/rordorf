@@ -2,6 +2,8 @@
 title: "Dokumente"
 date: 2018-04-18T02:00:00+01:00
 draft: false
+type: "page"
+layout: "documents"
 ---
 {{< rawhtml >}}
     <p>
